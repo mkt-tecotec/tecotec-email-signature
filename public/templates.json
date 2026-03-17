@@ -1,0 +1,14 @@
+[
+  {
+    "id": "tecotec",
+    "name": "TECOTEC Group",
+    "htmlPath": "/templates/tecotec.html",
+    "brandFolder": "/logos/tecotec"
+  },
+  {
+    "id": "oes",
+    "name": "TECOTEC - OES",
+    "htmlPath": "/templates/oes.html",
+    "brandFolder": "/logos/oes"
+  }
+]
