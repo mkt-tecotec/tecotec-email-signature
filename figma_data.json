@@ -1,0 +1,223 @@
+[
+  {
+    "client": "Gmail (Web Mail)",
+    "steps": [
+      "Đăng nhập vào tài khoản Gmail, nhấp vào biểu tượng Cài đặt (bánh răng) ở góc trên bên phải.",
+      "Chọn tùy chọn 'Xem tất cả cài đặt'.",
+      "Cuộn xuống phần 'Chữ ký' và nhấp vào 'Tạo mới'.",
+      "Nhập tên cho chữ ký mới của bạn và nhấp vào 'Tạo'.",
+      "Sao chép và dán chữ ký mới vào trình soạn thảo chữ ký.",
+      "Chọn chữ ký mới trong phần 'Chữ ký mặc định'.",
+      "Cuộn xuống cuối trang và nhấp vào 'Lưu thay đổi'."
+    ],
+    "screenshotUrls": [
+      "/instructions/gmail__web_mail__1.jpg"
+    ]
+  },
+  {
+    "client": "Apple Mail (MacOS)",
+    "steps": [
+      "Mở ứng dụng Mail, nhấp vào 'Mail' > 'Cài đặt' (hoặc Preferences).",
+      "Trong cửa sổ cài đặt, nhấp vào tab 'Chữ ký' (Signatures).",
+      "Nhấp vào nút '+' ở dưới cùng của cột giữa.",
+      "Bỏ chọn ô 'Luôn khớp với phông chữ tin nhắn mặc định của tôi'.",
+      "Sao chép và dán chữ ký mới vào cột bên phải.",
+      "Chọn chữ ký mới trong trường 'Chọn chữ ký' ở gần cuối cửa sổ.",
+      "Đóng cửa sổ cài đặt để lưu."
+    ],
+    "screenshotUrls": [
+      "/instructions/apple_mail__macos__1.jpg",
+      "/instructions/apple_mail__macos__2.jpg"
+    ]
+  },
+  {
+    "client": "Microsoft Outlook Modern (Web)",
+    "steps": [
+      "Đăng nhập vào tài khoản Outlook.com hoặc Office 365 trên web.",
+      "Nhấp vào biểu tượng Cài đặt ở góc trên bên phải.",
+      "Tìm kiếm 'Chữ ký' trong hộp tìm kiếm > chọn 'Chữ ký email'.",
+      "Nhập tên và nhấp vào '+ Chữ ký mới'.",
+      "Sao chép và dán chữ ký của bạn.",
+      "Chọn chữ ký thiết lập mặc định.",
+      "Nhấp vào 'Lưu'."
+    ],
+    "screenshotUrls": [
+      "/instructions/microsoft_outlook_modern__web__1.jpg"
+    ]
+  },
+  {
+    "client": "Mail App (iOS)",
+    "steps": [
+      "Trên thiết bị iOS, vào 'Cài đặt' > 'Mail'.",
+      "Cuộn xuống cuối và nhấp vào 'Chữ ký'.",
+      "Nhấn vào hộp văn bản và dán chữ ký. Sử dụng 'Lắc để Hoàn tác' nếu định dạng trông khác để khôi phục lại thiết kế ban đầu.",
+      "Thoát khỏi cài đặt để lưu."
+    ],
+    "screenshotUrls": [
+      "/instructions/mail_app__ios__1.jpg"
+    ]
+  },
+  {
+    "client": "Spark (MacOS)",
+    "steps": [
+      "Mở ứng dụng Spark, nhấp vào 'Spark' > 'Cài đặt'.",
+      "Nhấp vào tab 'Composer' > 'Signatures'.",
+      "Chuyển 'Bật chữ ký' sang 'Bật'.",
+      "Nhấp vào nút '+' hoặc 'Thêm chữ ký'.",
+      "Sao chép và dán chữ ký của bạn.",
+      "Đóng cửa sổ cài đặt để lưu."
+    ],
+    "screenshotUrls": [
+      "/instructions/spark__macos__1.jpg"
+    ]
+  },
+  {
+    "client": "Airmail (MacOS)",
+    "steps": [
+      "Mở ứng dụng Airmail, nhấp vào Airmail và chọn Preferences ở góc trên bên trái màn hình.",
+      "Từ cửa sổ preferences, nhấp vào tab Accounts, sau đó nhấp vào biểu tượng bánh răng cài đặt trên tài khoản email của bạn.",
+      "Nhấp vào tab Signature, sau đó nhấp vào dấu + để tạo chữ ký mới.",
+      "Nhấp vào tùy chọn HTML trong trình chỉnh sửa chữ ký và sao chép/dán chữ ký của bạn vào cột bên trái.",
+      "Nhấp vào Save, đóng cửa sổ Settings, soạn email mới và tận hưởng chữ ký mới của bạn!"
+    ],
+    "screenshotUrls": [
+      "/instructions/airmail__macos__1.jpg",
+      "/instructions/airmail__macos__2.jpg"
+    ]
+  },
+  {
+    "client": "Gmail (iOS)",
+    "steps": [
+      "Để email gửi qua Ứng dụng Gmail trên iOS sử dụng chữ ký tùy chỉnh, trước tiên bạn cần cài đặt chữ ký trên tài khoản webmail của mình.",
+      "Trong Ứng dụng Gmail, bạn cần đảm bảo rằng tùy chọn chữ ký di động (mobile signature) đã được tắt. Để tắt, nhấp vào Biểu tượng Menu, nhấp vào Settings, chọn Tài khoản Gmail của bạn, Signature Settings, và chuyển thanh gạt Mobile Signature sang chế độ \"Off\".",
+      "Gửi một email cho chính bạn để đảm bảo chữ ký xuất hiện."
+    ],
+    "screenshotUrls": [
+      "/instructions/gmail__ios__1.jpg"
+    ],
+    "notes": "Quan trọng: Chữ ký sẽ không hiển thị trong trình soạn thảo email. Cách duy nhất để kiểm tra là gửi email cho chính bạn. Có thể mất một lúc để chữ ký bắt đầu hoạt động trên ứng dụng Gmail."
+  },
+  {
+    "client": "Yahoo (Web Mail)",
+    "steps": [
+      "Sau khi đăng nhập vào tài khoản Yahoo, nhấp vào biểu tượng Bánh răng Cài đặt ở góc trên bên phải.",
+      "Trong menu thả xuống, nhấp vào More Settings.",
+      "Nhấp vào Writing Email từ các tùy chọn cài đặt.",
+      "Nhấp vào nút + ở phía dưới cột giữa.",
+      "Sao chép và dán chữ ký email mới của bạn vào trình chỉnh sửa chữ ký."
+    ],
+    "screenshotUrls": [
+      "/instructions/yahoo__web_mail__1.jpg",
+      "/instructions/yahoo__web_mail__2.jpg",
+      "/instructions/yahoo__web_mail__3.jpg"
+    ],
+    "notes": "Cảnh báo: Yahoo Mail có thể tự động điều chỉnh kích thước hình ảnh trong chữ ký, điều này có thể gây ra lỗi hiển thị trên một số ứng dụng email như Outlook 2019."
+  },
+  {
+    "client": "Microsoft Outlook Classic (Windows)",
+    "steps": [
+      "Mở Outlook, nhấp vào nút New Email để mở trình soạn thảo email.",
+      "Nhấp vào Signature trên thanh công cụ tin nhắn và chọn Signatures để mở cửa sổ cài đặt chữ ký.",
+      "Chọn chữ ký hiện có bạn muốn chỉnh sửa hoặc nhấp vào New để tạo chữ ký mới.",
+      "Sao chép và dán chữ ký của bạn vào trình chỉnh sửa chữ ký.",
+      "Nhấp vào OK để thoát khỏi cửa sổ cài đặt chữ ký.",
+      "Bây giờ trong mục Signature trên thanh công cụ, bạn sẽ thấy chữ ký của mình. Chọn chữ ký để chèn vào nội dung email."
+    ],
+    "screenshotUrls": [
+      "/instructions/microsoft_outlook_classic__windows__1.jpg",
+      "/instructions/microsoft_outlook_classic__windows__2.jpg",
+      "/instructions/microsoft_outlook_classic__windows__3.jpg",
+      "/instructions/microsoft_outlook_classic__windows__4.jpg"
+    ],
+    "notes": "Cảnh báo: Outlook sử dụng công cụ nạp Microsoft Word nên chữ ký có thể hiển thị hơi khác so với bản xem trước (khoảng cách, cỡ chữ, hình ảnh bị ép lại hoặc đường gạch chân màu xanh)."
+  },
+  {
+    "client": "Microsoft Outlook (iOS)",
+    "steps": [
+      "Gửi URL chia sẻ cho chính bạn và mở nó trên thiết bị iOS.",
+      "Trong ứng dụng Outlook iOS, nhấp vào biểu tượng hồ sơ ở góc trên bên trái để mở menu.",
+      "Nhấp vào biểu tượng bánh răng cài đặt ở góc dưới bên trái.",
+      "Dưới mục Email, nhấp vào tùy chọn Signature.",
+      "Xóa bất kỳ chữ ký hiện có nào trong trình chỉnh sửa.",
+      "Sao chép và dán chữ ký của bạn vào trình chỉnh sửa chữ ký.",
+      "Nhấp vào mũi tên quay lại để lưu chữ ký."
+    ],
+    "screenshotUrls": [
+      "/instructions/microsoft_outlook__ios__1.jpg",
+      "/instructions/microsoft_outlook__ios__2.jpg",
+      "/instructions/microsoft_outlook__ios__3.jpg",
+      "/instructions/microsoft_outlook__ios__4.jpg",
+      "/instructions/microsoft_outlook__ios__5.jpg"
+    ],
+    "notes": "Cảnh báo: Các liên kết email và số điện thoại có thể bị ứng dụng Outlook iOS xóa hoặc tự động đổi thành màu xanh."
+  },
+  {
+    "client": "Mail App (Windows 10)",
+    "steps": [
+      "Mở Windows 10 Mail, nhấp vào bánh răng Settings ở dưới cùng của thanh bên trái để mở ngăn cài đặt.",
+      "Nhấp vào tùy chọn Signature trong ngăn cài đặt để mở cửa sổ chữ ký.",
+      "Sao chép và dán chữ ký của bạn vào trình chỉnh sửa chữ ký."
+    ],
+    "screenshotUrls": [
+      "/instructions/mail_app__windows_10__1.jpg",
+      "/instructions/mail_app__windows_10__2.jpg"
+    ],
+    "notes": "Lưu ý: Giống như Outlook, ứng dụng này sử dụng Microsoft Word để hiển thị email nên chữ ký có thể thay đổi giao diện."
+  },
+  {
+    "client": "Mailbird (Windows)",
+    "steps": [
+      "Mở Mailbird, nhấp vào Menu ở góc trên bên trái và chọn Settings.",
+      "Trong cửa sổ Settings, nhấp vào tab Identities, chọn tài khoản của bạn và nhấp vào nút Edit.",
+      "Sao chép và dán chữ ký của bạn vào trình chỉnh sửa chữ ký."
+    ],
+    "screenshotUrls": [
+      "/instructions/mailbird__windows__1.jpg",
+      "/instructions/mailbird__windows__2.jpg"
+    ],
+    "notes": "Bạn có thể chỉnh sửa trực tiếp mã HTML bằng cách nhấp vào biểu tượng < > ở góc dưới bên trái trình chỉnh sửa."
+  },
+  {
+    "client": "Em Client (Windows)",
+    "steps": [
+      "Mở Em Client, nhấp vào Menu ở góc trên bên trái (bên cạnh logo), sau đó dưới mục Tools chọn Settings.",
+      "Từ cửa sổ Settings, nhấp vào tab Mail, sau đó nhấp vào tab con Templates and Signatures.",
+      "Nhấp vào nút Signatures…",
+      "Từ cửa sổ Signatures, nhấp vào Add Signature.",
+      "Đặt tên cho chữ ký và sao chép/dán chữ ký của bạn vào trình chỉnh sửa.",
+      "Nhấp vào OK để lưu."
+    ],
+    "screenshotUrls": [
+      "/instructions/em_client__windows__1.jpg",
+      "/instructions/em_client__windows__2.jpg",
+      "/instructions/em_client__windows__3.jpg",
+      "/instructions/em_client__windows__4.jpg",
+      "/instructions/em_client__windows__5.jpg"
+    ]
+  },
+  {
+    "client": "Mozilla Thunderbird (Windows)",
+    "steps": [
+      "Tải xuống chữ ký của bạn dưới dạng tệp HTML.",
+      "Mở Mozilla Thunderbird, nhấp vào Biểu tượng Menu ở góc trên bên phải, sau đó chọn Account Settings.",
+      "Trong cửa sổ Account Settings, tích vào ô \"Attach the signature from a file instead (text, HTML, or image)\" và chọn tệp chữ ký HTML bạn vừa tải xuống."
+    ],
+    "screenshotUrls": [
+      "/instructions/mozilla_thunderbird__windows__1.jpg"
+    ]
+  },
+  {
+    "client": "Proton Mail",
+    "steps": [
+      "Sau khi đăng nhập Proton Mail, nhấp vào bánh răng Settings ở góc trên bên phải.",
+      "Trong thanh bên trái, nhấp vào All settings.",
+      "Trong menu cài đặt, đi đến phần Identity and addresses.",
+      "Dán chữ ký email đã sao chép của bạn vào trình chỉnh sửa chữ ký.",
+      "Nhấp vào nút Update để lưu."
+    ],
+    "screenshotUrls": [
+      "/instructions/proton_mail_1.png",
+      "/instructions/proton_mail_2.png"
+    ]
+  }
+]
