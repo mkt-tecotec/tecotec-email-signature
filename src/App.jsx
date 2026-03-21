@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ChevronDown, Copy, Download, Link as LinkIcon } from 'lucide-react';
+import { Mail, X, Copy, Download, Link as LinkIcon } from 'lucide-react';
 
 export default function App() {
   const [templates, setTemplates] = useState([]);
@@ -15,7 +15,8 @@ export default function App() {
     address: '2nd Floor, CT3A Building, Mễ Trì Thượng, Nam Từ Liêm, HN',
   });
   const [toastMessage, setToastMessage] = useState('');
-  const [expandedGuide, setExpandedGuide] = useState(null);
+const [instructionData, setInstructionData] = useState([]);
+  const [selectedClientGuide, setSelectedClientGuide] = useState(null);
   
   const previewRef = useRef(null);
 
@@ -44,6 +45,19 @@ export default function App() {
   }, []);
 
   // Fetch HTML file when selected Template changes
+
+// Load instruction data from Figma JSON
+useEffect(() => {
+  fetch('/tecotec-email-signature/figma_data.json')
+    .then(res => res.json())
+    .then(data => setInstructionData(data))
+    .catch(err => {
+      fetch('/figma_data.json')
+        .then(res => res.json())
+        .then(data => setInstructionData(data))
+        .catch(e => console.error('Failed to load Figma instructions', e));
+    });
+}, []);
   useEffect(() => {
     if (!selectedTemplateId) return;
     const template = templates.find(t => t.id === selectedTemplateId);
@@ -253,7 +267,10 @@ export default function App() {
           <div className="preview-area">
             {/* We render the raw HTML using dangerouslySetInnerHTML */}
             <div 
+              key={selectedTemplateId + formData.name + formData.email}
               ref={previewRef}
+              className="preview-content"
+              style={{ animation: 'fadeIn 0.5s ease-out' }}
               dangerouslySetInnerHTML={{ __html: generateSignatureHtml() }}
             />
           </div>
@@ -262,39 +279,137 @@ export default function App() {
 
       <div className="guide-section" id="guide">
         <h2>Hướng dẫn cài đặt</h2>
-        <div className="accordion">
-          {guides.map(guide => (
-            <div className="accordion-item" key={guide.id}>
-              <button 
-                className="accordion-header"
-                onClick={() => setExpandedGuide(expandedGuide === guide.id ? null : guide.id)}
-              >
-                <span>{guide.title}</span>
-                <ChevronDown 
-                  size={20} 
-                  style={{
-                    transform: expandedGuide === guide.id ? 'rotate(180deg)' : 'rotate(0)',
-                    transition: 'transform 0.3s'
-                  }} 
-                />
-              </button>
-              <div 
-                className={`accordion-content ${expandedGuide === guide.id ? 'open' : ''}`}
-                style={{ 
-                  maxHeight: expandedGuide === guide.id ? '500px' : '0',
-                  padding: expandedGuide === guide.id ? '0 24px 24px' : '0 24px'
-                }}
-              >
-                <ol>
-                  {guide.content.map((step, idx) => (
-                    <li key={idx}>{step}</li>
-                  ))}
-                </ol>
+        
+        {instructionData.length === 0 && (
+           <p style={{ textAlign: 'center', margin: '20px 0', color: '#666' }}>Đang tải hướng dẫn...</p>
+        )}
+
+        <div className="client-grid">
+          {(instructionData.length > 0 ? instructionData : guides.map(g => ({ client: g.title, steps: g.content }))).map((guide, idx) => (
+            <div 
+              className="client-card" 
+              key={idx}
+              onClick={() => setSelectedClientGuide(guide)}
+            >
+              <img 
+                key={`grid-icon-${guide.client}`}
+                className="client-card-icon"
+                src={`${import.meta.env.BASE_URL}icons/${guide.client.toLowerCase().replace(/[^a-z0-9]/g, '_')}.png`} 
+                alt="" 
+                onError={(e) => { 
+                  e.target.style.display = 'none'; 
+                  if (e.target.nextSibling) e.target.nextSibling.style.display = 'block';
+                }} 
+              />
+              <div key={`grid-fallback-${guide.client}`} style={{ display: 'none', color: '#666' }}>
+                <Mail size={32} />
               </div>
+              <span className="client-card-name">{guide.client}</span>
             </div>
           ))}
         </div>
       </div>
+
+      {selectedClientGuide && (
+        <div className="guide-modal-overlay" onClick={() => setSelectedClientGuide(null)}>
+          <div className="guide-modal-container" onClick={(e) => e.stopPropagation()}>
+            <div className="guide-modal-sidebar">
+              <div className="sidebar-header">
+                <span className="sidebar-title">Chọn ứng dụng</span>
+              </div>
+              <div className="sidebar-nav">
+                {(instructionData.length > 0 ? instructionData : guides.map(g => ({ client: g.title, steps: g.content }))).map((guide, idx) => (
+                  <div 
+                    key={idx}
+                    className={`sidebar-nav-item ${selectedClientGuide.client === guide.client ? 'active' : ''}`}
+                    onClick={() => setSelectedClientGuide(guide)}
+                  >
+                    <img 
+                      key={`sidebar-icon-${guide.client}`}
+                      src={`${import.meta.env.BASE_URL}icons/${guide.client.toLowerCase().replace(/[^a-z0-9]/g, '_')}.png`} 
+                      alt="" 
+                      width={20} height={20} 
+                      style={{ objectFit: 'contain' }}
+                      onError={(e) => { e.target.style.display = 'none'; }} 
+                    />
+                    <span>{guide.client}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <div className="guide-modal-content">
+              <button className="modal-close" onClick={() => setSelectedClientGuide(null)}>
+                <X size={24} />
+              </button>
+              
+              <h3 className="guide-title">
+                <img 
+                  key={`modal-icon-${selectedClientGuide.client}`}
+                  src={`${import.meta.env.BASE_URL}icons/${selectedClientGuide.client.toLowerCase().replace(/[^a-z0-9]/g, '_')}.png`} 
+                  alt="" 
+                  width={32} height={32} 
+                  style={{ objectFit: 'contain' }}
+                  onError={(e) => { e.target.style.display = 'none'; }} 
+                />
+                Cài đặt cho {selectedClientGuide.client}
+              </h3>
+              
+              {selectedClientGuide.notes && (
+                <div style={{
+                  padding: '12px 16px',
+                  backgroundColor: '#FFF3CD',
+                  color: '#856404',
+                  borderLeft: '4px solid #FFEBA8',
+                  borderRadius: '4px',
+                  marginBottom: '24px',
+                  fontSize: '14px',
+                  lineHeight: '1.5',
+                  fontWeight: '500'
+                }}>
+                  {selectedClientGuide.notes}
+                </div>
+              )}
+
+              <div className="step-list">
+                {selectedClientGuide.steps && selectedClientGuide.steps.map((step, sIdx) => (
+                  <div key={sIdx} style={{ marginBottom: '24px' }}>
+                    <div className="step-item" style={{ marginBottom: '12px' }}>
+                      <div className="step-indicator">{sIdx + 1}</div>
+                      <div className="step-text">{step}</div>
+                    </div>
+                    {/* Render corresponding image right after the step */}
+                    {selectedClientGuide.screenshotUrls && selectedClientGuide.screenshotUrls[sIdx] && (
+                      <div className="step-image-container" style={{ marginLeft: '40px', marginTop: '12px' }}>
+                        <img 
+                          src={import.meta.env.BASE_URL + selectedClientGuide.screenshotUrls[sIdx].replace(/^\//, '')} 
+                          alt={`${selectedClientGuide.client} screenshot ${sIdx + 1}`} 
+                          className="step-image"
+                        />
+                      </div>
+                    )}
+                  </div>
+                ))}
+
+                {/* Render any leftover images if there are more screenshots than steps */}
+                {selectedClientGuide.screenshotUrls && selectedClientGuide.screenshotUrls.length > selectedClientGuide.steps.length && (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginLeft: '40px', marginTop: '16px' }}>
+                    {selectedClientGuide.screenshotUrls.slice(selectedClientGuide.steps.length).map((url, iIdx) => (
+                      <div className="step-image-container" key={iIdx}>
+                        <img 
+                          src={import.meta.env.BASE_URL + url.replace(/^\//, '')} 
+                          alt={`${selectedClientGuide.client} screenshot extra ${iIdx + 1}`} 
+                          className="step-image"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       <footer>
         &copy; {new Date().getFullYear()} TECOTEC Group. All rights reserved.
