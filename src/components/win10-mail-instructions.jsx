@@ -1,9 +1,9 @@
 import React from 'react';
 
-const imgStep1 = "./images/guides/mail_app__windows_10__1.jpg";
-const imgStep2 = "./images/guides/mail_app__windows_10__2.jpg";
-const imgStep3 = "./images/guides/mail_app__windows_10__1.jpg";
-const imgStep4 = "./images/guides/mail_app__windows_10__2.jpg";
+const imgStep1 = "./images/guides/win10-mail-step1.png";
+const imgStep2 = "./images/guides/win10-mail-step2.png";
+const imgStep3 = "./images/guides/win10-mail-step3.png";
+const imgStep4 = "./images/guides/win10-mail-step4.png";
 
 const Win10MailInstructions = () => {
     const imgStyle = {
@@ -45,7 +45,7 @@ const Win10MailInstructions = () => {
                     </p>
                 </div>
 
-                <img src={imgStep1} alt="Windows 10 Mail Warning" style={{...imgStyle, maxWidth: '450px' }} />
+                <img src={imgStep1} alt="Windows 10 Mail Warning" style={{ ...imgStyle, maxWidth: '450px' }} />
 
                 <ol style={{ ...listStyle, listStyleType: 'decimal' }} start={1}>
                     <li>Với Windows 10 Mail đang mở, nhấp vào biểu tượng Cài đặt (Settings cog) ở dưới cùng của thanh bên trái để mở ngăn cài đặt.</li>

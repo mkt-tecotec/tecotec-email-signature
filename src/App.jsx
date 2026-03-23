@@ -153,7 +153,7 @@ export default function App() {
     {
       id: 'gmail_webmail',
       title: 'Gmail (Web Mail)',
-      icon: './icons/gmail__web_mail_.png',
+      icon: './images/icons/gmail__web_mail_.png',
       content: [
         <GmailWebmailInstructions />
       ]
@@ -161,7 +161,7 @@ export default function App() {
     {
       id: 'apple_mail',
       title: 'Apple Mail (macOS)',
-      icon: './icons/apple_mail__macos_.png',
+      icon: './images/icons/apple_mail__macos_.png',
       content: [
         <AppleMailInstructions/>
       ]
@@ -169,7 +169,7 @@ export default function App() {
     {
       id: 'outlook_webmail',
       title: 'Microsoft Outlook (Web)',
-      icon: './icons/microsoft_outlook_modern__web_.png',
+      icon: './images/icons/microsoft_outlook_modern__web_.png',
       content: [
         <OutlookWebmailInstructions />
       ]
@@ -177,7 +177,7 @@ export default function App() {
     {
       id: 'spark',
       title: 'Spark (macOS)',
-      icon: './icons/spark__macos_.png',
+      icon: './images/icons/spark__macos_.png',
       content: [
         <SparkInstructions />
       ]
@@ -185,7 +185,7 @@ export default function App() {
     {
       id: 'gmail_ios',
       title: 'Gmail (iOS)',
-      icon: './icons/gmail__ios_.png',
+      icon: './images/icons/gmail__ios_.png',
       content: [
         <GmailIosInstructions />
       ]
@@ -193,7 +193,7 @@ export default function App() {
     {
       id: 'ios_mail',
       title: 'Mail App (iOS)',
-      icon: './icons/mail_app__ios_.png',
+      icon: './images/icons/mail_app__ios_.png',
       content: [
         <IosMailInstructions/>
       ]
@@ -201,7 +201,7 @@ export default function App() {
     {
       id: 'outlook_ios',
       title: 'Microsoft Outlook (iOS)',
-      icon: './icons/microsoft_outlook__ios_.png',
+      icon: './images/icons/microsoft_outlook__ios_.png',
       content: [
         <OutlookIosInstructions />
       ]
@@ -209,7 +209,7 @@ export default function App() {
     {
       id: 'outlook_classic',
       title: 'Microsoft Outlook Classic (Windows)',
-      icon: './icons/microsoft_outlook_classic__windows_.png',
+      icon: './images/icons/microsoft_outlook_classic__windows_.png',
       content: [
         <OutlookClassicInstructions />
       ]
@@ -217,7 +217,7 @@ export default function App() {
     {
       id: 'yahoo_webmail',
       title: 'Yahoo (Web Mail)',
-      icon: './icons/yahoo__web_mail_.png',
+      icon: './images/icons/yahoo__web_mail_.png',
       content: [
         <YahooWebmailInstructions />
       ]
@@ -225,7 +225,7 @@ export default function App() {
     {
       id: 'airmail',
       title: 'Airmail',
-      icon: './icons/airmail__macos_.png',
+      icon: './images/icons/airmail__macos_.png',
       content: [
         <AirmailInstructions />
       ]
@@ -233,7 +233,7 @@ export default function App() {
     {
       id: 'protonmail',
       title: 'Proton Mail',
-      icon: './icons/proton_mail.png',
+      icon: './images/icons/proton_mail.png',
       content: [
         <ProtonMailInstructions />
       ]
@@ -241,7 +241,7 @@ export default function App() {
     {
       id: 'mailbird',
       title: 'Mailbird (Windows)',
-      icon: './icons/mailbird__windows_.png',
+      icon: './images/icons/mailbird__windows_.png',
       content: [
         <MailbirdInstructions />
       ]
@@ -249,7 +249,7 @@ export default function App() {
     {
       id: 'emclient',
       title: 'Em Client (Windows)',
-      icon: './icons/em_client__windows_.png',
+      icon: './images/icons/em_client__windows_.png',
       content: [
         <EmClientInstructions />
       ]
@@ -257,7 +257,7 @@ export default function App() {
     {
       id: 'thunderbird',
       title: 'Mozilla Thunderbird (Windows)',
-      icon: './icons/mozilla_thunderbird__windows_.png',
+      icon: './images/icons/mozilla_thunderbird__windows_.png',
       content: [
         <ThunderbirdInstructions />
       ]
@@ -265,7 +265,7 @@ export default function App() {
     {
       id: 'win10_mail',
       title: 'Mail App (Windows 10)',
-      icon: './icons/mail_app__windows_10_.png',
+      icon: './images/icons/mail_app__windows_10_.png',
       content: [
         <Win10MailInstructions />
       ]

@@ -1,8 +1,8 @@
 import React from 'react';
 
 const imgStep1 = "./images/guides/spark__macos__1.jpg";
-const imgStep2 = "./images/guides/spark__macos__1.jpg";
-const imgStep3 = "./images/guides/spark__macos__1.jpg";
+const imgStep2 = "./images/guides/spark__macos__2.jpg";
+const imgStep3 = "./images/guides/spark__macos__3.jpg";
 
 const SparkInstructions = () => {
     const imgStyle = {

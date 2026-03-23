@@ -32,7 +32,7 @@ const IosMailInstructions = () => {
             </ol>
 
             <img
-                src="./images/guides/mail_app__ios__1.jpg"
+                src="./images/guides/mail_app__ios__2.jpg"
                 alt="Instruction Step 2"
                 style={{
                     width: '100%',
@@ -48,7 +48,7 @@ const IosMailInstructions = () => {
             </ol>
 
             <img
-                src="./images/guides/mail_app__ios__1.jpg"
+                src="./images/guides/mail_app__ios__3.jpg"
                 alt="Instruction Step 3"
                 style={{
                     width: '100%',

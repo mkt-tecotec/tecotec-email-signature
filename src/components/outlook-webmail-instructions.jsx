@@ -1,8 +1,8 @@
 import React from 'react';
 
 const imgStep1 = "./images/guides/microsoft_outlook_modern__web__1.jpg";
-const imgStep2 = "./images/guides/microsoft_outlook_modern__web__1.jpg";
-const imgStep3 = "./images/guides/microsoft_outlook_modern__web__1.jpg";
+const imgStep2 = "./images/guides/microsoft_outlook_modern__web__2.jpg";
+const imgStep3 = "./images/guides/microsoft_outlook_modern__web__3.jpg";
 
 const OutlookWebmailInstructions = () => {
     const imgStyle = {

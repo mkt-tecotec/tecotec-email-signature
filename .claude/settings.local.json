@@ -56,7 +56,10 @@
       "Bash(then)",
       "Bash(echo \"Found header in $file\")",
       "Bash(fi)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(cd /d/Tecotec Group/tecotec-email-signature)",
+      "Bash(npm run deploy)",
+      "Bash(grep -n \"images/guides\" *.jsx)"
     ]
   }
 }
