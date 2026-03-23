@@ -1,0 +1,20 @@
+import React from 'react';
+
+const GroupIcon = ({ size = 16, className = "" }) => (
+  <svg 
+    width={size} 
+    height={(size * 44) / 36} 
+    viewBox="0 0 36 44" 
+    fill="none" 
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ display: 'inline-block', verticalAlign: 'middle' }}
+  >
+    <path 
+      d="M24 0C26.2 0 28 1.8 28 4H30C33.3 4 36 6.7 36 10V38C36 41.3 33.3 44 30 44H6C2.7 44 0 41.3 0 38V10C0 6.7 2.7 4 6 4H8C8 1.8 9.8 0 12 0H24ZM8 8H6C4.9 8 4 8.9 4 10V38C4 39.1 4.9 40 6 40H30C31.1 40 32 39.1 32 38V10C32 8.9 31.1 8 30 8H28C28 10.2 26.2 12 24 12H12C9.8 12 8 10.2 8 8ZM28 32V36H8V32H28ZM28 26V30H8V26H28ZM11 16C12.7 16 14 17.3 14 19C14 20.7 12.7 22 11 22C9.3 22 8 20.7 8 19C8 17.3 9.3 16 11 16ZM24 4H12V8H24V4Z" 
+      fill="currentColor"
+    />
+  </svg>
+);
+
+export default GroupIcon;

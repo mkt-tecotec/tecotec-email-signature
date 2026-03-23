@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Figma__get_metadata",
+      "Bash(git clone:*)",
+      "Bash(npm install:*)",
+      "Bash(curl -s -X POST http://localhost:38451/exec -H \"Content-Type: application/json\" -d '{:*)",
+      "Bash(curl -s -X POST http://localhost:38451/exec -H \"Content-Type: application/json\" -d '{\"\"operation\"\": \"\"status\"\", \"\"params\"\": {}}')",
+      "mcp__claude_ai_Figma__get_design_context"
+    ]
+  }
+}

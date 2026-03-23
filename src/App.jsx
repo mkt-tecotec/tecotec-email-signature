@@ -1,5 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ChevronDown, Copy, Download, Link as LinkIcon } from 'lucide-react';
+import { ChevronDown, Download, Link as LinkIcon } from 'lucide-react';
+import GroupIcon from './components/group-icon';
+import AppleMailInstructions from './components/apple-mail-instructions';
+import IosMailInstructions from './components/ios-mail-instructions';
+import AirmailInstructions from './components/airmail-instructions';
+import SparkInstructions from './components/spark-instructions';
+import GmailWebmailInstructions from './components/gmail-webmail-instructions';
+import GmailIosInstructions from './components/gmail-ios-instructions';
+import YahooWebmailInstructions from './components/yahoo-webmail-instructions';
+import OutlookWebmailInstructions from './components/outlook-webmail-instructions';
+import OutlookIosInstructions from './components/outlook-ios-instructions';
+import OutlookClassicInstructions from './components/outlook-classic-instructions';
+import MailbirdInstructions from './components/mailbird-instructions';
+import EmClientInstructions from './components/emclient-instructions';
+import ProtonMailInstructions from './components/protonmail-instructions';
 
 export default function App() {
   const [templates, setTemplates] = useState([]);
@@ -16,8 +30,10 @@ export default function App() {
   });
   const [toastMessage, setToastMessage] = useState('');
   const [expandedGuide, setExpandedGuide] = useState(null);
-  
+  const [contentHeights, setContentHeights] = useState({});
+
   const previewRef = useRef(null);
+  const contentRefs = useRef({});
 
   // Fetch templates.json on mount
   useEffect(() => {
@@ -123,40 +139,124 @@ export default function App() {
     }, 3000);
   };
 
+  const measureContent = (guideId) => {
+    if (contentRefs.current[guideId]) {
+      const height = contentRefs.current[guideId].scrollHeight;
+      setContentHeights(prev => ({ ...prev, [guideId]: height }));
+    }
+  };
+
+  const handleGuideToggle = (guideId) => {
+    if (expandedGuide !== guideId) {
+      // Delay measurement to let content render
+      setTimeout(() => measureContent(guideId), 0);
+    }
+    setExpandedGuide(expandedGuide === guideId ? null : guideId);
+  };
+
   const guides = [
     {
       id: 'gmail',
       title: 'Gmail (Web)',
+      icon: './assets/gmail-webmail-icon.png',
       content: [
-        'Nhấn nút "Sao chép chữ ký" ở bên trên.',
-        'Mở Gmail, vào Cài đặt (biểu tượng bánh răng) > Xem tất cả cài đặt.',
-        'Kéo xuống phần "Chữ ký" (Signature).',
-        'Tạo chữ ký mới, sau đó Dán (Ctrl+V / Cmd+V) nội dung vào khung soạn thảo.',
-        'Chọn chữ ký vừa tạo cho "Email sử dụng mới" hoặc "Email trả lời/chuyển tiếp".',
-        'Kéo xuống cuối trang và nhấn "Lưu thay đổi".'
+        <AppleMailInstructions/>
       ]
     },
     {
       id: 'outlook_win',
       title: 'Outlook (Windows)',
+      icon: './assets/outlook-classic-icon.png',
       content: [
-        'Nhấn nút "Sao chép chữ ký".',
-        'Mở Outlook, vào File > Options > Mail > Signatures.',
-        'Nhấn "New" để tạo chữ ký mới.',
-        'Dán (Ctrl+V) vào ô soạn thảo. Đảm bảo ô "Keep Source Formatting" được chọn để giữ nguyên thiết kế.',
-        'Nhấn OK để lưu lại.'
+        <IosMailInstructions/>
       ]
     },
     {
       id: 'apple_mail',
       title: 'Apple Mail (macOS)',
+      icon: './assets/apple-mail-ios.png',
       content: [
-        'Nhấn nút "Sao chép chữ ký".',
-        'Mở ứng dụng Mail, vào Mail > Settings (hoặc Preferences) > Signatures.',
-        'Chọn tài khoản email bên cột trái, nhấn dấu cộng (+) ở giữa.',
-        'Bỏ chọn ô "Always match my default message font".',
-        'Dán (Cmd+V) vào ô bên phải. Đừng lo lắng nếu ảnh không hiển thị đúng ở đây, nó sẽ hiển thị bình thường khi soạn email.',
-        'Tắt cửa sổ để lưu.'
+        <AirmailInstructions />
+      ]
+    },
+    {
+      id: 'spark',
+      title: 'Spark (macOS)',
+      icon: './assets/spark-macos.png',
+      content: [
+        <SparkInstructions />
+      ]
+    },
+    {
+      id: 'gmail_webmail',
+      title: 'Install Signature – Gmail (Web Mail)',
+      icon: './assets/gmail-webmail-icon.png',
+      content: [
+        <GmailWebmailInstructions />
+      ]
+    },
+    {
+      id: 'gmail_ios',
+      title: 'Install Signature – Gmail (iOS)',
+      icon: './assets/gmail-ios-icon.png',
+      content: [
+        <GmailIosInstructions />
+      ]
+    },
+    {
+      id: 'yahoo_webmail',
+      title: 'Install Signature – Yahoo (Web Mail)',
+      icon: './assets/yahoo-webmail-icon.png',
+      content: [
+        <YahooWebmailInstructions />
+      ]
+    },
+    {
+      id: 'outlook_webmail',
+      title: 'Install Signature – Microsoft Outlook Modern (Windows / Web)',
+      icon: './assets/outlook-webmail-icon.png',
+      content: [
+        <OutlookWebmailInstructions />
+      ]
+    },
+    {
+      id: 'outlook_ios',
+      title: 'Install Signature – Microsoft Outlook (iOS)',
+      icon: './assets/outlook-ios-icon.png',
+      content: [
+        <OutlookIosInstructions />
+      ]
+    },
+    {
+      id: 'outlook_classic',
+      title: 'Install Signature – Microsoft Outlook Classic (Windows)',
+      icon: './assets/outlook-classic-icon.png',
+      content: [
+        <OutlookClassicInstructions />
+      ]
+    },
+    {
+      id: 'mailbird',
+      title: 'Install Signature – Mailbird (Windows)',
+      icon: './assets/mailbird-icon.png',
+      content: [
+        <MailbirdInstructions />
+      ]
+    },
+    {
+      id: 'emclient',
+      title: 'Install Signature – Em Client (Windows)',
+      icon: './assets/emclient-icon.png',
+      content: [
+        <EmClientInstructions />
+      ]
+    },
+    {
+      id: 'protonmail',
+      title: 'Install Signature – Proton Mail',
+      icon: './assets/protonmail-icon.png',
+      content: [
+        <ProtonMailInstructions />
       ]
     }
   ];
@@ -235,7 +335,7 @@ export default function App() {
 
           <div className="actions">
             <button className="btn btn-primary" onClick={copyToClipboard}>
-              <Copy size={16} /> Sao chép chữ ký
+              <GroupIcon size={16} /> Sao chép chữ ký
             </button>
             <button className="btn btn-secondary" onClick={downloadHtml}>
               <Download size={16} /> Tải xuống HTML
@@ -265,31 +365,59 @@ export default function App() {
         <div className="accordion">
           {guides.map(guide => (
             <div className="accordion-item" key={guide.id}>
-              <button 
+              <button
                 className="accordion-header"
-                onClick={() => setExpandedGuide(expandedGuide === guide.id ? null : guide.id)}
-              >
-                <span>{guide.title}</span>
-                <ChevronDown 
-                  size={20} 
-                  style={{
-                    transform: expandedGuide === guide.id ? 'rotate(180deg)' : 'rotate(0)',
-                    transition: 'transform 0.3s'
-                  }} 
-                />
-              </button>
-              <div 
-                className={`accordion-content ${expandedGuide === guide.id ? 'open' : ''}`}
-                style={{ 
-                  maxHeight: expandedGuide === guide.id ? '500px' : '0',
-                  padding: expandedGuide === guide.id ? '0 24px 24px' : '0 24px'
+                onClick={() => handleGuideToggle(guide.id)}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '7px',
+                  width: '100%'
                 }}
               >
-                <ol>
+                {guide.icon && (
+                  <img
+                    src={guide.icon}
+                    alt="Email client icon"
+                    style={{ width: '42px', height: '42px', objectFit: 'contain', flexShrink: 0 }}
+                  />
+                )}
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  flexGrow: 1,
+                  padding: '16px 24px'
+                }}>
+                  <span style={{
+                    fontSize: '16px',
+                    fontWeight: '500',
+                    color: '#000000'
+                  }}>{guide.title}</span>
+                  <ChevronDown
+                    size={20}
+                    style={{
+                      transform: expandedGuide === guide.id ? 'rotate(180deg)' : 'rotate(0)',
+                      transition: 'transform 0.3s'
+                    }}
+                  />
+                </div>
+              </button>
+              <div
+                className={`accordion-content ${expandedGuide === guide.id ? 'open' : ''}`}
+                ref={(el) => { contentRefs.current[guide.id] = el; }}
+                style={{
+                  maxHeight: expandedGuide === guide.id ? `${contentHeights[guide.id] || 'auto'}px` : '0',
+                  overflow: 'hidden',
+                  padding: expandedGuide === guide.id ? '0 24px 24px' : '0 24px',
+                  transition: 'max-height 0.3s ease'
+                }}
+              >
+                <div>
                   {guide.content.map((step, idx) => (
-                    <li key={idx}>{step}</li>
+                    <div key={idx}>{step}</div>
                   ))}
-                </ol>
+                </div>
               </div>
             </div>
           ))}

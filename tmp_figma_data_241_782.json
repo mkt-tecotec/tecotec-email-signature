@@ -1,0 +1,471 @@
+﻿{
+    "success":  true,
+    "data":  {
+                 "tree":  {
+                              "id":  "241:782",
+                              "name":  "Apple Mail (MacOS)",
+                              "type":  "SECTION",
+                              "x":  2999,
+                              "y":  1718,
+                              "width":  1920,
+                              "height":  1342,
+                              "fill":  "#ffffff",
+                              "children":  [
+                                               {
+                                                   "id":  "241:555",
+                                                   "name":  "Frame 296",
+                                                   "type":  "FRAME",
+                                                   "x":  380,
+                                                   "y":  56,
+                                                   "width":  1160,
+                                                   "height":  1286,
+                                                   "layout":  {
+                                                                  "mode":  "VERTICAL",
+                                                                  "itemSpacing":  11,
+                                                                  "align":  "MIN",
+                                                                  "crossAlign":  "MIN",
+                                                                  "paddingTop":  0,
+                                                                  "paddingRight":  0,
+                                                                  "paddingBottom":  0,
+                                                                  "paddingLeft":  0,
+                                                                  "primarySizing":  "FIXED",
+                                                                  "counterSizing":  "FIXED"
+                                                              },
+                                                   "children":  [
+                                                                    {
+                                                                        "id":  "241:507",
+                                                                        "name":  "Heading 2",
+                                                                        "type":  "FRAME",
+                                                                        "x":  0,
+                                                                        "y":  0,
+                                                                        "width":  1160,
+                                                                        "height":  30,
+                                                                        "layout":  {
+                                                                                       "mode":  "VERTICAL",
+                                                                                       "itemSpacing":  0,
+                                                                                       "align":  "MIN",
+                                                                                       "crossAlign":  "MIN",
+                                                                                       "paddingTop":  0,
+                                                                                       "paddingRight":  0,
+                                                                                       "paddingBottom":  0,
+                                                                                       "paddingLeft":  0,
+                                                                                       "primarySizing":  "AUTO",
+                                                                                       "counterSizing":  "FIXED"
+                                                                                   },
+                                                                        "layoutAlign":  "STRETCH",
+                                                                        "children":  [
+                                                                                         {
+                                                                                             "id":  "241:508",
+                                                                                             "name":  "HÆ°á»ng dáº«n cÃ i Äáº·t",
+                                                                                             "type":  "TEXT",
+                                                                                             "x":  0,
+                                                                                             "y":  0,
+                                                                                             "width":  1160,
+                                                                                             "height":  30,
+                                                                                             "fill":  "#333333",
+                                                                                             "boundVariables":  {
+                                                                                                                    "fills":  [
+                                                                                                                                  "VariableID:241:138"
+                                                                                                                              ],
+                                                                                                                    "fontSize":  [
+                                                                                                                                     "VariableID:241:154"
+                                                                                                                                 ],
+                                                                                                                    "fontFamily":  [
+                                                                                                                                       "VariableID:241:18"
+                                                                                                                                   ],
+                                                                                                                    "lineHeight":  [
+                                                                                                                                       "VariableID:241:155"
+                                                                                                                                   ],
+                                                                                                                    "fontWeight":  [
+                                                                                                                                       "VariableID:241:56"
+                                                                                                                                   ]
+                                                                                                                },
+                                                                                             "content":  "HÆ°á»ng dáº«n cÃ i Äáº·t",
+                                                                                             "fontSize":  20,
+                                                                                             "fontFamily":  "Inter",
+                                                                                             "fontWeight":  "Semi Bold",
+                                                                                             "lineHeight":  30,
+                                                                                             "textAlign":  "LEFT",
+                                                                                             "textAlignVertical":  "CENTER",
+                                                                                             "textAutoResize":  "HEIGHT",
+                                                                                             "layoutAlign":  "STRETCH"
+                                                                                         }
+                                                                                     ]
+                                                                    },
+                                                                    {
+                                                                        "id":  "241:554",
+                                                                        "name":  "Frame 295",
+                                                                        "type":  "FRAME",
+                                                                        "x":  0,
+                                                                        "y":  41,
+                                                                        "width":  1160,
+                                                                        "height":  52,
+                                                                        "layout":  {
+                                                                                       "mode":  "HORIZONTAL",
+                                                                                       "itemSpacing":  7,
+                                                                                       "align":  "MIN",
+                                                                                       "crossAlign":  "CENTER",
+                                                                                       "paddingTop":  0,
+                                                                                       "paddingRight":  0,
+                                                                                       "paddingBottom":  0,
+                                                                                       "paddingLeft":  0,
+                                                                                       "primarySizing":  "FIXED",
+                                                                                       "counterSizing":  "AUTO"
+                                                                                   },
+                                                                        "layoutAlign":  "STRETCH",
+                                                                        "children":  [
+                                                                                         {
+                                                                                             "id":  "236:40",
+                                                                                             "name":  "apple-mail-macos 1",
+                                                                                             "type":  "RECTANGLE",
+                                                                                             "x":  0,
+                                                                                             "y":  5,
+                                                                                             "width":  42,
+                                                                                             "height":  42,
+                                                                                             "fills":  [
+                                                                                                           {
+                                                                                                               "type":  "IMAGE",
+                                                                                                               "visible":  true,
+                                                                                                               "scaleMode":  "FILL",
+                                                                                                               "imageHash":  "e236ed47ea422801813915211c5d7b6152eb434e"
+                                                                                                           }
+                                                                                                       ],
+                                                                                             "hasImage":  true,
+                                                                                             "imageHint":  "Use figma_read screenshot with nodeId to extract this image"
+                                                                                         },
+                                                                                         {
+                                                                                             "id":  "241:544",
+                                                                                             "name":  "Component 4",
+                                                                                             "type":  "FRAME",
+                                                                                             "x":  49,
+                                                                                             "y":  0,
+                                                                                             "width":  1110,
+                                                                                             "height":  52,
+                                                                                             "fill":  "#ffffff",
+                                                                                             "layout":  {
+                                                                                                            "mode":  "HORIZONTAL",
+                                                                                                            "itemSpacing":  943.4099731445312,
+                                                                                                            "align":  "SPACE_BETWEEN",
+                                                                                                            "crossAlign":  "CENTER",
+                                                                                                            "paddingTop":  16,
+                                                                                                            "paddingRight":  24,
+                                                                                                            "paddingBottom":  16,
+                                                                                                            "paddingLeft":  24,
+                                                                                                            "primarySizing":  "FIXED",
+                                                                                                            "counterSizing":  "AUTO"
+                                                                                                        },
+                                                                                             "children":  [
+                                                                                                              {
+                                                                                                                  "id":  "241:545",
+                                                                                                                  "name":  "Container",
+                                                                                                                  "type":  "FRAME",
+                                                                                                                  "x":  24,
+                                                                                                                  "y":  17,
+                                                                                                                  "width":  152,
+                                                                                                                  "height":  19,
+                                                                                                                  "layout":  {
+                                                                                                                                 "mode":  "VERTICAL",
+                                                                                                                                 "itemSpacing":  0,
+                                                                                                                                 "align":  "MIN",
+                                                                                                                                 "crossAlign":  "MIN",
+                                                                                                                                 "paddingTop":  0,
+                                                                                                                                 "paddingRight":  0,
+                                                                                                                                 "paddingBottom":  0,
+                                                                                                                                 "paddingLeft":  0,
+                                                                                                                                 "primarySizing":  "AUTO",
+                                                                                                                                 "counterSizing":  "AUTO"
+                                                                                                                             },
+                                                                                                                  "constraints":  {
+                                                                                                                                      "horizontal":  "MIN",
+                                                                                                                                      "vertical":  "CENTER"
+                                                                                                                                  },
+                                                                                                                  "children":  [
+                                                                                                                                   {
+                                                                                                                                       "id":  "241:546",
+                                                                                                                                       "name":  "Text",
+                                                                                                                                       "type":  "TEXT",
+                                                                                                                                       "x":  0,
+                                                                                                                                       "y":  0,
+                                                                                                                                       "width":  152,
+                                                                                                                                       "height":  19,
+                                                                                                                                       "fill":  "#000000",
+                                                                                                                                       "boundVariables":  {
+                                                                                                                                                              "fills":  [
+                                                                                                                                                                            "VariableID:241:46"
+                                                                                                                                                                        ],
+                                                                                                                                                              "fontSize":  [
+                                                                                                                                                                               "VariableID:241:85"
+                                                                                                                                                                           ],
+                                                                                                                                                              "fontFamily":  [
+                                                                                                                                                                                 "VariableID:241:18"
+                                                                                                                                                                             ],
+                                                                                                                                                              "fontWeight":  [
+                                                                                                                                                                                 "VariableID:241:20"
+                                                                                                                                                                             ]
+                                                                                                                                                          },
+                                                                                                                                       "content":  "Apple Mail (MacOS)",
+                                                                                                                                       "fontSize":  16,
+                                                                                                                                       "fontFamily":  "Inter",
+                                                                                                                                       "fontWeight":  "Medium",
+                                                                                                                                       "lineHeight":  "auto",
+                                                                                                                                       "textAlign":  "LEFT",
+                                                                                                                                       "textAlignVertical":  "CENTER",
+                                                                                                                                       "textAutoResize":  "WIDTH_AND_HEIGHT"
+                                                                                                                                   }
+                                                                                                                               ]
+                                                                                                              },
+                                                                                                              {
+                                                                                                                  "id":  "241:547",
+                                                                                                                  "name":  "Component 2",
+                                                                                                                  "type":  "INSTANCE",
+                                                                                                                  "x":  1066,
+                                                                                                                  "y":  16,
+                                                                                                                  "width":  20,
+                                                                                                                  "height":  20,
+                                                                                                                  "clipsContent":  true,
+                                                                                                                  "constraints":  {
+                                                                                                                                      "horizontal":  "MIN",
+                                                                                                                                      "vertical":  "CENTER"
+                                                                                                                                  },
+                                                                                                                  "overrideCount":  1,
+                                                                                                                  "isIcon":  true,
+                                                                                                                  "children":  [
+                                                                                                                                   {
+                                                                                                                                       "id":  "I241:547;241:43",
+                                                                                                                                       "name":  "Vector",
+                                                                                                                                       "type":  "VECTOR",
+                                                                                                                                       "x":  5,
+                                                                                                                                       "y":  8,
+                                                                                                                                       "width":  10,
+                                                                                                                                       "height":  5,
+                                                                                                                                       "stroke":  "#000000",
+                                                                                                                                       "strokeWeight":  1.6666666269302368,
+                                                                                                                                       "strokeAlign":  "CENTER",
+                                                                                                                                       "boundVariables":  {
+                                                                                                                                                              "strokeWeight":  "VariableID:241:45",
+                                                                                                                                                              "opacity":  "VariableID:241:35",
+                                                                                                                                                              "strokes":  [
+                                                                                                                                                                              "VariableID:241:46"
+                                                                                                                                                                          ]
+                                                                                                                                                          },
+                                                                                                                                       "constraints":  {
+                                                                                                                                                           "horizontal":  "SCALE",
+                                                                                                                                                           "vertical":  "SCALE"
+                                                                                                                                                       },
+                                                                                                                                       "pathCount":  1
+                                                                                                                                   }
+                                                                                                                               ],
+                                                                                                                  "svgMarkup":  "\u003csvg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"\u003e\n\u003cpath d=\"M5 7.5L10 12.5L15 7.5\" stroke=\"black\" stroke-width=\"1.66667\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/\u003e\n\u003c/svg\u003e\n"
+                                                                                                              }
+                                                                                                          ]
+                                                                                         }
+                                                                                     ]
+                                                                    },
+                                                                    {
+                                                                        "id":  "241:563",
+                                                                        "name":  "Frame 297",
+                                                                        "type":  "FRAME",
+                                                                        "x":  0,
+                                                                        "y":  104,
+                                                                        "width":  954,
+                                                                        "height":  1182,
+                                                                        "layout":  {
+                                                                                       "mode":  "VERTICAL",
+                                                                                       "itemSpacing":  11,
+                                                                                       "align":  "MIN",
+                                                                                       "crossAlign":  "MIN",
+                                                                                       "paddingTop":  0,
+                                                                                       "paddingRight":  0,
+                                                                                       "paddingBottom":  0,
+                                                                                       "paddingLeft":  0,
+                                                                                       "primarySizing":  "FIXED",
+                                                                                       "counterSizing":  "AUTO"
+                                                                                   },
+                                                                        "children":  [
+                                                                                         {
+                                                                                             "id":  "241:552",
+                                                                                             "name":  "With the Mail application open, Click Mail and then Preferences in the top left corner of your screen. From the preferences pop-up, click the Signatures tab. Click the + button at the bottom of the middle column. Copy and paste your new email signature into the right-hand column and close the pop-up window to save.â¨ In this preview the images will appear blank. Don\u0027t worry â once you actaully go to compose an email the images will appear. Important: Â Ensure that \"Always match my default message font\" is unchecked, otherwise your signature will appear in plain text. Important: Â Still seeing a plain text version? Try toggling the \"Place signature above quoted text\" checkbox and pasting in your signature again.",
+                                                                                             "type":  "TEXT",
+                                                                                             "x":  0,
+                                                                                             "y":  0,
+                                                                                             "width":  954,
+                                                                                             "height":  189,
+                                                                                             "fill":  "#000000",
+                                                                                             "boundVariables":  {
+                                                                                                                    "fontSize":  [
+                                                                                                                                     "VariableID:241:19"
+                                                                                                                                 ],
+                                                                                                                    "fontFamily":  [
+                                                                                                                                       "VariableID:241:18"
+                                                                                                                                   ],
+                                                                                                                    "lineHeight":  [
+                                                                                                                                       "VariableID:241:21"
+                                                                                                                                   ],
+                                                                                                                    "fontWeight":  [
+                                                                                                                                       "VariableID:241:20"
+                                                                                                                                   ]
+                                                                                                                },
+                                                                                             "content":  "With the Mail application open, Click Mail and then Preferences in the top left corner of your screen.\nFrom the preferences pop-up, click the Signatures tab.\nClick the + button at the bottom of the middle column.\nCopy and paste your new email signature into the right-hand column and close the pop-up window to save.â¨\nIn this preview the images will appear blank. Don\u0027t worry â once you actaully go to compose an email the images will appear.\nImportant: Â Ensure that \"Always match my default message font\" is unchecked, otherwise your signature will appear in plain text.\nImportant: Â Still seeing a plain text version? Try toggling the \"Place signature above quoted text\" checkbox and pasting in your signature again.\n",
+                                                                                             "fontSize":  14,
+                                                                                             "lineHeight":  21,
+                                                                                             "textAlign":  "LEFT",
+                                                                                             "textAutoResize":  "HEIGHT"
+                                                                                         },
+                                                                                         {
+                                                                                             "id":  "241:557",
+                                                                                             "name":  "image 3",
+                                                                                             "type":  "RECTANGLE",
+                                                                                             "x":  0,
+                                                                                             "y":  200,
+                                                                                             "width":  433,
+                                                                                             "height":  445,
+                                                                                             "fills":  [
+                                                                                                           {
+                                                                                                               "type":  "IMAGE",
+                                                                                                               "visible":  true,
+                                                                                                               "scaleMode":  "FILL",
+                                                                                                               "imageHash":  "ee7b9b9b666c375344448114ebf6529133d8fa21"
+                                                                                                           }
+                                                                                                       ],
+                                                                                             "effects":  [
+                                                                                                             {
+                                                                                                                 "type":  "DROP_SHADOW",
+                                                                                                                 "color":  "#000000",
+                                                                                                                 "offset":  {
+                                                                                                                                "x":  0,
+                                                                                                                                "y":  4
+                                                                                                                            },
+                                                                                                                 "radius":  4,
+                                                                                                                 "spread":  0
+                                                                                                             },
+                                                                                                             {
+                                                                                                                 "type":  "DROP_SHADOW",
+                                                                                                                 "color":  "#000000",
+                                                                                                                 "offset":  {
+                                                                                                                                "x":  0,
+                                                                                                                                "y":  8
+                                                                                                                            },
+                                                                                                                 "radius":  12,
+                                                                                                                 "spread":  6
+                                                                                                             }
+                                                                                                         ],
+                                                                                             "hasImage":  true,
+                                                                                             "imageHint":  "Use figma_read screenshot with nodeId to extract this image"
+                                                                                         },
+                                                                                         {
+                                                                                             "id":  "241:559",
+                                                                                             "name":  "Select your new signature in the \"Choose Signature\" field near the bottom of the pop-up. Close the Preferences pop-up, compose a new email and enjoy your new signature! Important: Â Images not appearing when you compose an email? Go to your Privacy settings and ensure thatÂ Block All Remote ContentÂ is unchecked.",
+                                                                                             "type":  "TEXT",
+                                                                                             "x":  0,
+                                                                                             "y":  656,
+                                                                                             "width":  954,
+                                                                                             "height":  84,
+                                                                                             "fill":  "#000000",
+                                                                                             "boundVariables":  {
+                                                                                                                    "fontSize":  [
+                                                                                                                                     "VariableID:241:19"
+                                                                                                                                 ],
+                                                                                                                    "fontFamily":  [
+                                                                                                                                       "VariableID:241:18"
+                                                                                                                                   ],
+                                                                                                                    "lineHeight":  [
+                                                                                                                                       "VariableID:241:21"
+                                                                                                                                   ],
+                                                                                                                    "fontWeight":  [
+                                                                                                                                       "VariableID:241:20"
+                                                                                                                                   ]
+                                                                                                                },
+                                                                                             "content":  "Select your new signature in the \"Choose Signature\" field near the bottom of the pop-up.\nClose the Preferences pop-up, compose a new email and enjoy your new signature!\nImportant: Â Images not appearing when you compose an email? Go to your Privacy settings and ensure thatÂ Block All Remote ContentÂ is unchecked.",
+                                                                                             "fontSize":  14,
+                                                                                             "lineHeight":  21,
+                                                                                             "textAlign":  "LEFT",
+                                                                                             "textAutoResize":  "HEIGHT"
+                                                                                         },
+                                                                                         {
+                                                                                             "id":  "241:561",
+                                                                                             "name":  "image 4",
+                                                                                             "type":  "RECTANGLE",
+                                                                                             "x":  0,
+                                                                                             "y":  751,
+                                                                                             "width":  433,
+                                                                                             "height":  406,
+                                                                                             "fills":  [
+                                                                                                           {
+                                                                                                               "type":  "IMAGE",
+                                                                                                               "visible":  true,
+                                                                                                               "scaleMode":  "FILL",
+                                                                                                               "imageHash":  "f61082cf4d2642626d728cbb9b1d43d54f55cd57"
+                                                                                                           }
+                                                                                                       ],
+                                                                                             "effects":  [
+                                                                                                             {
+                                                                                                                 "type":  "DROP_SHADOW",
+                                                                                                                 "color":  "#000000",
+                                                                                                                 "offset":  {
+                                                                                                                                "x":  0,
+                                                                                                                                "y":  4
+                                                                                                                            },
+                                                                                                                 "radius":  4,
+                                                                                                                 "spread":  0
+                                                                                                             },
+                                                                                                             {
+                                                                                                                 "type":  "DROP_SHADOW",
+                                                                                                                 "color":  "#000000",
+                                                                                                                 "offset":  {
+                                                                                                                                "x":  0,
+                                                                                                                                "y":  8
+                                                                                                                            },
+                                                                                                                 "radius":  12,
+                                                                                                                 "spread":  6
+                                                                                                             }
+                                                                                                         ],
+                                                                                             "hasImage":  true,
+                                                                                             "imageHint":  "Use figma_read screenshot with nodeId to extract this image"
+                                                                                         }
+                                                                                     ]
+                                                                    }
+                                                                ]
+                                               }
+                                           ]
+                          },
+                 "tokens":  {
+                                "colors":  [
+                                               "#ffffff",
+                                               "#333333",
+                                               "#000000"
+                                           ],
+                                "fonts":  [
+                                              "Inter/Semi Bold/20px",
+                                              "Inter/Medium/16px"
+                                          ],
+                                "sizes":  [
+                                              5,
+                                              10,
+                                              19,
+                                              20,
+                                              30,
+                                              42,
+                                              52,
+                                              84,
+                                              152,
+                                              189,
+                                              406,
+                                              433,
+                                              445,
+                                              954,
+                                              1110,
+                                              1160,
+                                              1182,
+                                              1286,
+                                              1342,
+                                              1920
+                                          ]
+                            },
+                 "meta":  {
+                              "maxDepth":  10,
+                              "detail":  "full",
+                              "nodeType":  "SECTION",
+                              "inlinedIcons":  1
+                          }
+             }
+}

@@ -1,0 +1,272 @@
+﻿{
+    "success":  true,
+    "data":  {
+                 "page":  "Page 1",
+                 "nodes":  [
+                               {
+                                   "id":  "1:5",
+                                   "name":  "Email Signature Generator",
+                                   "type":  "FRAME",
+                                   "parentId":  "0:1",
+                                   "x":  -1427,
+                                   "y":  -582,
+                                   "width":  1366,
+                                   "height":  768,
+                                   "childCount":  8
+                               },
+                               {
+                                   "id":  "30:368",
+                                   "name":  "TECOTEC Group",
+                                   "type":  "FRAME",
+                                   "parentId":  "0:1",
+                                   "x":  -1427,
+                                   "y":  396,
+                                   "width":  650,
+                                   "height":  380,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "171:14",
+                                   "name":  "TECOTEC OES",
+                                   "type":  "FRAME",
+                                   "parentId":  "0:1",
+                                   "x":  -1427,
+                                   "y":  864,
+                                   "width":  650,
+                                   "height":  380,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "174:833",
+                                   "name":  "TECOTEC OES",
+                                   "type":  "FRAME",
+                                   "parentId":  "0:1",
+                                   "x":  -545,
+                                   "y":  864,
+                                   "width":  650,
+                                   "height":  380,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "109:14",
+                                   "name":  "TMK Technologies",
+                                   "type":  "FRAME",
+                                   "parentId":  "0:1",
+                                   "x":  -545,
+                                   "y":  396,
+                                   "width":  783,
+                                   "height":  380,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "241:97",
+                                   "name":  "(Components)",
+                                   "type":  "SECTION",
+                                   "parentId":  "0:1",
+                                   "x":  2999,
+                                   "y":  -245,
+                                   "width":  2534,
+                                   "height":  1410,
+                                   "childCount":  7
+                               },
+                               {
+                                   "id":  "241:134",
+                                   "name":  "1920w light",
+                                   "type":  "FRAME",
+                                   "parentId":  "0:1",
+                                   "x":  893,
+                                   "y":  1718,
+                                   "width":  1920,
+                                   "height":  1244,
+                                   "childCount":  2
+                               },
+                               {
+                                   "id":  "241:782",
+                                   "name":  "Apple Mail (MacOS)",
+                                   "type":  "SECTION",
+                                   "parentId":  "0:1",
+                                   "x":  2999,
+                                   "y":  1718,
+                                   "width":  1920,
+                                   "height":  1342,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "241:783",
+                                   "name":  "Install Signature â  Mail App (iOS)",
+                                   "type":  "SECTION",
+                                   "parentId":  "0:1",
+                                   "x":  5059,
+                                   "y":  1718,
+                                   "width":  1920,
+                                   "height":  2466,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "241:788",
+                                   "name":  "Install Signature â  Spark (MacOS)",
+                                   "type":  "SECTION",
+                                   "parentId":  "0:1",
+                                   "x":  9179,
+                                   "y":  1718,
+                                   "width":  1920,
+                                   "height":  2466,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "241:785",
+                                   "name":  "Install Signature â  Gmail (Web Mail)",
+                                   "type":  "SECTION",
+                                   "parentId":  "0:1",
+                                   "x":  11239,
+                                   "y":  1718,
+                                   "width":  1920,
+                                   "height":  1224,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "241:787",
+                                   "name":  "Install Signature â  Gmail (iOS)",
+                                   "type":  "SECTION",
+                                   "parentId":  "0:1",
+                                   "x":  13299,
+                                   "y":  1718,
+                                   "width":  1920,
+                                   "height":  1446,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "241:784",
+                                   "name":  "Install Signature â  Yahoo (Web Mail)",
+                                   "type":  "SECTION",
+                                   "parentId":  "0:1",
+                                   "x":  15359,
+                                   "y":  1718,
+                                   "width":  1920,
+                                   "height":  2447,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "246:67",
+                                   "name":  "Install Signature â  Microsoft Outlook Modern (Windows / Web)",
+                                   "type":  "SECTION",
+                                   "parentId":  "0:1",
+                                   "x":  17419,
+                                   "y":  1718,
+                                   "width":  1920,
+                                   "height":  2447,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "246:96",
+                                   "name":  "Install Signature â  Microsoft Outlook (iOS)",
+                                   "type":  "SECTION",
+                                   "parentId":  "0:1",
+                                   "x":  19479,
+                                   "y":  1718,
+                                   "width":  1920,
+                                   "height":  3089,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "246:149",
+                                   "name":  "Install Signature â  Microsoft Outlook Classic (Windows)",
+                                   "type":  "SECTION",
+                                   "parentId":  "0:1",
+                                   "x":  21539,
+                                   "y":  1718,
+                                   "width":  1920,
+                                   "height":  3089,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "246:188",
+                                   "name":  "Install Signature â  Mail App (Windows 10)",
+                                   "type":  "SECTION",
+                                   "parentId":  "0:1",
+                                   "x":  23599,
+                                   "y":  1718,
+                                   "width":  1920,
+                                   "height":  3089,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "246:221",
+                                   "name":  "Install Signature â  Mailbird (Windows)",
+                                   "type":  "SECTION",
+                                   "parentId":  "0:1",
+                                   "x":  25659,
+                                   "y":  1718,
+                                   "width":  1920,
+                                   "height":  3089,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "246:255",
+                                   "name":  "Install Signature â  Em Client (Windows)",
+                                   "type":  "SECTION",
+                                   "parentId":  "0:1",
+                                   "x":  27719,
+                                   "y":  1718,
+                                   "width":  1920,
+                                   "height":  3089,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "246:300",
+                                   "name":  "Install Signature â  Mozilla Thunderbird (Windows)",
+                                   "type":  "SECTION",
+                                   "parentId":  "0:1",
+                                   "x":  29779,
+                                   "y":  1718,
+                                   "width":  1920,
+                                   "height":  3089,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "246:330",
+                                   "name":  "Install Signature â  Proton Mail",
+                                   "type":  "SECTION",
+                                   "parentId":  "0:1",
+                                   "x":  31839,
+                                   "y":  1718,
+                                   "width":  1920,
+                                   "height":  3089,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "241:786",
+                                   "name":  "Install Signature â  Airmail (MacOS)",
+                                   "type":  "SECTION",
+                                   "parentId":  "0:1",
+                                   "x":  7119,
+                                   "y":  1718,
+                                   "width":  1920,
+                                   "height":  1342,
+                                   "childCount":  1
+                               },
+                               {
+                                   "id":  "246:382",
+                                   "name":  "image 49",
+                                   "type":  "RECTANGLE",
+                                   "parentId":  "0:1",
+                                   "x":  -4802,
+                                   "y":  3263,
+                                   "width":  2657,
+                                   "height":  4096,
+                                   "childCount":  0
+                               },
+                               {
+                                   "id":  "246:385",
+                                   "name":  "image 50",
+                                   "type":  "RECTANGLE",
+                                   "parentId":  "0:1",
+                                   "x":  -1858,
+                                   "y":  3263,
+                                   "width":  2657,
+                                   "height":  4096,
+                                   "childCount":  0
+                               }
+                           ]
+             }
+}

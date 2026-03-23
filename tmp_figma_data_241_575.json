@@ -1,0 +1,268 @@
+{
+  "success": true,
+  "data": {
+    "tree": {
+      "id": "241:575",
+      "name": "Frame 297",
+      "type": "FRAME",
+      "x": 0,
+      "y": 104,
+      "width": 954,
+      "height": 2054,
+      "layout": {
+        "mode": "VERTICAL",
+        "itemSpacing": 11,
+        "align": "MIN",
+        "crossAlign": "MIN",
+        "paddingTop": 0,
+        "paddingRight": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "primarySizing": "FIXED",
+        "counterSizing": "AUTO"
+      },
+      "children": [
+        {
+          "id": "241:576",
+          "name": "Send yourself the share URL and open it on your iOS device. Go to the Settings app on your iOS device. Scroll down and select Mail (or Settings → Apps → Mail on some versions). Then scroll down to the Composing section and tap Signature.",
+          "type": "TEXT",
+          "x": 0,
+          "y": 0,
+          "width": 954,
+          "height": 63,
+          "fill": "#000000",
+          "boundVariables": {
+            "fontSize": [
+              "VariableID:241:19"
+            ],
+            "fontFamily": [
+              "VariableID:241:18"
+            ],
+            "lineHeight": [
+              "VariableID:241:21"
+            ],
+            "fontWeight": [
+              "VariableID:241:20"
+            ]
+          },
+          "content": "Send yourself the share URL and open it on your iOS device.\nGo to the Settings app on your iOS device. Scroll down and select Mail (or Settings → Apps → Mail on some versions). Then scroll down to the Composing section and tap Signature.",
+          "fontSize": 14,
+          "fontFamily": "Inter",
+          "fontWeight": "Medium",
+          "lineHeight": 21,
+          "textAlign": "LEFT",
+          "textAutoResize": "HEIGHT"
+        },
+        {
+          "id": "241:589",
+          "name": "image 5",
+          "type": "RECTANGLE",
+          "x": 0,
+          "y": 74,
+          "width": 450,
+          "height": 474,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "scaleMode": "FILL",
+              "imageHash": "44b092f0946038975045be676da8689609993b9b"
+            }
+          ],
+          "effects": [
+            {
+              "type": "DROP_SHADOW",
+              "color": "#000000",
+              "offset": {
+                "x": 0,
+                "y": 4
+              },
+              "radius": 4,
+              "spread": 0
+            },
+            {
+              "type": "DROP_SHADOW",
+              "color": "#000000",
+              "offset": {
+                "x": 0,
+                "y": 8
+              },
+              "radius": 12,
+              "spread": 6
+            }
+          ],
+          "hasImage": true,
+          "imageHint": "Use figma_read screenshot with nodeId to extract this image"
+        },
+        {
+          "id": "241:578",
+          "name": "Copy and paste your signature into the signature editor (press and hold on the editor to bring up the paste option).",
+          "type": "TEXT",
+          "x": 0,
+          "y": 559,
+          "width": 954,
+          "height": 21,
+          "fill": "#000000",
+          "boundVariables": {
+            "fontSize": [
+              "VariableID:241:19"
+            ],
+            "fontFamily": [
+              "VariableID:241:18"
+            ],
+            "lineHeight": [
+              "VariableID:241:21"
+            ],
+            "fontWeight": [
+              "VariableID:241:20"
+            ]
+          },
+          "content": "Copy and paste your signature into the signature editor (press and hold on the editor to bring up the paste option).",
+          "fontSize": 14,
+          "fontFamily": "Inter",
+          "fontWeight": "Medium",
+          "lineHeight": 21,
+          "textAlign": "LEFT",
+          "textAutoResize": "HEIGHT"
+        },
+        {
+          "id": "241:592",
+          "name": "image 6",
+          "type": "RECTANGLE",
+          "x": 0,
+          "y": 591,
+          "width": 450,
+          "height": 783,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "scaleMode": "FILL",
+              "imageHash": "875014c650828ae7aa71102fbd1e2e3c84f55d5c"
+            }
+          ],
+          "effects": [
+            {
+              "type": "DROP_SHADOW",
+              "color": "#000000",
+              "offset": {
+                "x": 0,
+                "y": 4
+              },
+              "radius": 4,
+              "spread": 0
+            },
+            {
+              "type": "DROP_SHADOW",
+              "color": "#000000",
+              "offset": {
+                "x": 0,
+                "y": 8
+              },
+              "radius": 12,
+              "spread": 6
+            }
+          ],
+          "hasImage": true,
+          "imageHint": "Use figma_read screenshot with nodeId to extract this image"
+        },
+        {
+          "id": "241:594",
+          "name": "Go to the Mail app, compose and new email and enjoy your new signature!",
+          "type": "TEXT",
+          "x": 0,
+          "y": 1385,
+          "width": 954,
+          "height": 21,
+          "fill": "#000000",
+          "boundVariables": {
+            "fontSize": [
+              "VariableID:241:19"
+            ],
+            "fontFamily": [
+              "VariableID:241:18"
+            ],
+            "lineHeight": [
+              "VariableID:241:21"
+            ],
+            "fontWeight": [
+              "VariableID:241:20"
+            ]
+          },
+          "content": "Go to the Mail app, compose and new email and enjoy your new signature!",
+          "fontSize": 14,
+          "fontFamily": "Inter",
+          "fontWeight": "Medium",
+          "lineHeight": 21,
+          "textAlign": "LEFT",
+          "textAutoResize": "HEIGHT"
+        },
+        {
+          "id": "241:599",
+          "name": "image 7",
+          "type": "RECTANGLE",
+          "x": 0,
+          "y": 1417,
+          "width": 450,
+          "height": 652,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "scaleMode": "FILL",
+              "imageHash": "b54374d25a306646b3642585eb942ee93c70ba07"
+            }
+          ],
+          "effects": [
+            {
+              "type": "DROP_SHADOW",
+              "color": "#000000",
+              "offset": {
+                "x": 0,
+                "y": 4
+              },
+              "radius": 4,
+              "spread": 0
+            },
+            {
+              "type": "DROP_SHADOW",
+              "color": "#000000",
+              "offset": {
+                "x": 0,
+                "y": 8
+              },
+              "radius": 12,
+              "spread": 6
+            }
+          ],
+          "hasImage": true,
+          "imageHint": "Use figma_read screenshot with nodeId to extract this image"
+        }
+      ]
+    },
+    "tokens": {
+      "colors": [
+        "#000000"
+      ],
+      "fonts": [
+        "Inter/Medium/14px"
+      ],
+      "sizes": [
+        21,
+        63,
+        450,
+        474,
+        652,
+        783,
+        954,
+        2054
+      ]
+    },
+    "meta": {
+      "maxDepth": 10,
+      "detail": "full",
+      "nodeType": "FRAME",
+      "inlinedIcons": 0
+    }
+  }
+}
