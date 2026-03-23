@@ -211,7 +211,7 @@ header h1 {
   border: 1px dashed var(--border-color);
   border-radius: 8px;
   padding: 24px;
-  background-color: #fafafa;
+  background-color: transparent;
   min-height: 250px;
   overflow-x: auto;
   max-width: 100%;
@@ -219,6 +219,7 @@ header h1 {
 
 .preview-area > div {
   max-width: 100%;
+  background-color: transparent !important;
 }
 
 .guide-section {
