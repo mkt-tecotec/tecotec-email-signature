@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ChevronDown, Download, Link as LinkIcon } from 'lucide-react';
+import { Download, Link as LinkIcon, X } from 'lucide-react';
 import GroupIcon from './components/group-icon';
 import AppleMailInstructions from './components/apple-mail-instructions';
 import IosMailInstructions from './components/ios-mail-instructions';
@@ -14,6 +14,8 @@ import OutlookClassicInstructions from './components/outlook-classic-instruction
 import MailbirdInstructions from './components/mailbird-instructions';
 import EmClientInstructions from './components/emclient-instructions';
 import ProtonMailInstructions from './components/protonmail-instructions';
+import ThunderbirdInstructions from './components/thunderbird-instructions';
+import Win10MailInstructions from './components/win10-mail-instructions';
 
 export default function App() {
   const [templates, setTemplates] = useState([]);
@@ -29,11 +31,9 @@ export default function App() {
     address: '2nd Floor, CT3A Building, Mễ Trì Thượng, Nam Từ Liêm, HN',
   });
   const [toastMessage, setToastMessage] = useState('');
-  const [expandedGuide, setExpandedGuide] = useState(null);
-  const [contentHeights, setContentHeights] = useState({});
+  const [activeModalGuide, setActiveModalGuide] = useState(null);
 
   const previewRef = useRef(null);
-  const contentRefs = useRef({});
 
   // Fetch templates.json on mount
   useEffect(() => {
@@ -139,124 +139,135 @@ export default function App() {
     }, 3000);
   };
 
-  const measureContent = (guideId) => {
-    if (contentRefs.current[guideId]) {
-      const height = contentRefs.current[guideId].scrollHeight;
-      setContentHeights(prev => ({ ...prev, [guideId]: height }));
-    }
+  const handleOpenModal = (guideId) => {
+    setActiveModalGuide(guideId);
+    document.body.style.overflow = 'hidden';
   };
 
-  const handleGuideToggle = (guideId) => {
-    if (expandedGuide !== guideId) {
-      // Delay measurement to let content render
-      setTimeout(() => measureContent(guideId), 0);
-    }
-    setExpandedGuide(expandedGuide === guideId ? null : guideId);
+  const handleCloseModal = () => {
+    setActiveModalGuide(null);
+    document.body.style.overflow = '';
   };
 
   const guides = [
     {
-      id: 'gmail',
-      title: 'Gmail (Web)',
-      icon: './assets/gmail-webmail-icon.png',
-      content: [
-        <AppleMailInstructions/>
-      ]
-    },
-    {
-      id: 'outlook_win',
-      title: 'Outlook (Windows)',
-      icon: './assets/outlook-classic-icon.png',
-      content: [
-        <IosMailInstructions/>
-      ]
-    },
-    {
-      id: 'apple_mail',
-      title: 'Apple Mail (macOS)',
-      icon: './assets/apple-mail-ios.png',
-      content: [
-        <AirmailInstructions />
-      ]
-    },
-    {
-      id: 'spark',
-      title: 'Spark (macOS)',
-      icon: './assets/spark-macos.png',
-      content: [
-        <SparkInstructions />
-      ]
-    },
-    {
       id: 'gmail_webmail',
-      title: 'Install Signature – Gmail (Web Mail)',
-      icon: './assets/gmail-webmail-icon.png',
+      title: 'Gmail (Web Mail)',
+      icon: './icons/gmail__web_mail_.png',
       content: [
         <GmailWebmailInstructions />
       ]
     },
     {
-      id: 'gmail_ios',
-      title: 'Install Signature – Gmail (iOS)',
-      icon: './assets/gmail-ios-icon.png',
+      id: 'apple_mail',
+      title: 'Apple Mail (macOS)',
+      icon: './icons/apple_mail__macos_.png',
       content: [
-        <GmailIosInstructions />
-      ]
-    },
-    {
-      id: 'yahoo_webmail',
-      title: 'Install Signature – Yahoo (Web Mail)',
-      icon: './assets/yahoo-webmail-icon.png',
-      content: [
-        <YahooWebmailInstructions />
+        <AppleMailInstructions/>
       ]
     },
     {
       id: 'outlook_webmail',
-      title: 'Install Signature – Microsoft Outlook Modern (Windows / Web)',
-      icon: './assets/outlook-webmail-icon.png',
+      title: 'Microsoft Outlook (Web)',
+      icon: './icons/microsoft_outlook_modern__web_.png',
       content: [
         <OutlookWebmailInstructions />
       ]
     },
     {
+      id: 'spark',
+      title: 'Spark (macOS)',
+      icon: './icons/spark__macos_.png',
+      content: [
+        <SparkInstructions />
+      ]
+    },
+    {
+      id: 'gmail_ios',
+      title: 'Gmail (iOS)',
+      icon: './icons/gmail__ios_.png',
+      content: [
+        <GmailIosInstructions />
+      ]
+    },
+    {
+      id: 'ios_mail',
+      title: 'Mail App (iOS)',
+      icon: './icons/mail_app__ios_.png',
+      content: [
+        <IosMailInstructions/>
+      ]
+    },
+    {
       id: 'outlook_ios',
-      title: 'Install Signature – Microsoft Outlook (iOS)',
-      icon: './assets/outlook-ios-icon.png',
+      title: 'Microsoft Outlook (iOS)',
+      icon: './icons/microsoft_outlook__ios_.png',
       content: [
         <OutlookIosInstructions />
       ]
     },
     {
       id: 'outlook_classic',
-      title: 'Install Signature – Microsoft Outlook Classic (Windows)',
-      icon: './assets/outlook-classic-icon.png',
+      title: 'Microsoft Outlook Classic (Windows)',
+      icon: './icons/microsoft_outlook_classic__windows_.png',
       content: [
         <OutlookClassicInstructions />
       ]
     },
     {
+      id: 'yahoo_webmail',
+      title: 'Yahoo (Web Mail)',
+      icon: './icons/yahoo__web_mail_.png',
+      content: [
+        <YahooWebmailInstructions />
+      ]
+    },
+    {
+      id: 'airmail',
+      title: 'Airmail',
+      icon: './icons/airmail__macos_.png',
+      content: [
+        <AirmailInstructions />
+      ]
+    },
+    {
+      id: 'protonmail',
+      title: 'Proton Mail',
+      icon: './icons/proton_mail.png',
+      content: [
+        <ProtonMailInstructions />
+      ]
+    },
+    {
       id: 'mailbird',
-      title: 'Install Signature – Mailbird (Windows)',
-      icon: './assets/mailbird-icon.png',
+      title: 'Mailbird (Windows)',
+      icon: './icons/mailbird__windows_.png',
       content: [
         <MailbirdInstructions />
       ]
     },
     {
       id: 'emclient',
-      title: 'Install Signature – Em Client (Windows)',
-      icon: './assets/emclient-icon.png',
+      title: 'Em Client (Windows)',
+      icon: './icons/em_client__windows_.png',
       content: [
         <EmClientInstructions />
       ]
     },
     {
-      id: 'protonmail',
-      title: 'Install Signature – Proton Mail',
-      icon: './assets/protonmail-icon.png',
+      id: 'thunderbird',
+      title: 'Mozilla Thunderbird (Windows)',
+      icon: './icons/mozilla_thunderbird__windows_.png',
       content: [
-        <ProtonMailInstructions />
+        <ThunderbirdInstructions />
+      ]
+    },
+    {
+      id: 'win10_mail',
+      title: 'Mail App (Windows 10)',
+      icon: './icons/mail_app__windows_10_.png',
+      content: [
+        <Win10MailInstructions />
       ]
     }
   ];
@@ -362,66 +373,70 @@ export default function App() {
 
       <div className="guide-section" id="guide">
         <h2>Hướng dẫn cài đặt</h2>
-        <div className="accordion">
+        <div className="guide-grid">
           {guides.map(guide => (
-            <div className="accordion-item" key={guide.id}>
-              <button
-                className="accordion-header"
-                onClick={() => handleGuideToggle(guide.id)}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '7px',
-                  width: '100%'
-                }}
-              >
-                {guide.icon && (
-                  <img
-                    src={guide.icon}
-                    alt="Email client icon"
-                    style={{ width: '42px', height: '42px', objectFit: 'contain', flexShrink: 0 }}
-                  />
-                )}
-                <div style={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  flexGrow: 1,
-                  padding: '16px 24px'
-                }}>
-                  <span style={{
-                    fontSize: '16px',
-                    fontWeight: '500',
-                    color: '#000000'
-                  }}>{guide.title}</span>
-                  <ChevronDown
-                    size={20}
-                    style={{
-                      transform: expandedGuide === guide.id ? 'rotate(180deg)' : 'rotate(0)',
-                      transition: 'transform 0.3s'
-                    }}
-                  />
+            <div 
+              className="guide-card" 
+              key={guide.id}
+              onClick={() => handleOpenModal(guide.id)}
+            >
+              {guide.icon && (
+                <img
+                  src={guide.icon}
+                  alt={guide.title}
+                />
+              )}
+              <span>{guide.title}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Modal Overlay */}
+      <div 
+        className={`modal-overlay ${activeModalGuide ? 'open' : ''}`}
+        onClick={(e) => {
+          if (e.target === e.currentTarget) handleCloseModal();
+        }}
+      >
+        {activeModalGuide && (() => {
+          const currentGuide = guides.find(g => g.id === activeModalGuide);
+          return (
+            <div className="modal-container">
+              <div className="modal-header">
+                <div className="modal-header-left">
+                  {currentGuide.icon && <img src={currentGuide.icon} alt="Icon" />}
+                  <span className="modal-header-title">Cài đặt cho {currentGuide.title}</span>
                 </div>
-              </button>
-              <div
-                className={`accordion-content ${expandedGuide === guide.id ? 'open' : ''}`}
-                ref={(el) => { contentRefs.current[guide.id] = el; }}
-                style={{
-                  maxHeight: expandedGuide === guide.id ? `${contentHeights[guide.id] || 'auto'}px` : '0',
-                  overflow: 'hidden',
-                  padding: expandedGuide === guide.id ? '0 24px 24px' : '0 24px',
-                  transition: 'max-height 0.3s ease'
-                }}
-              >
-                <div>
-                  {guide.content.map((step, idx) => (
+                <button className="modal-close" onClick={handleCloseModal}>
+                  <X size={20} />
+                </button>
+              </div>
+              <div className="modal-body">
+                <div className="modal-sidebar">
+                  <div style={{ padding: '0 24px 12px', fontSize: '14px', fontWeight: '600', color: '#666' }}>
+                    Chọn ứng dụng
+                  </div>
+                  {guides.map(guide => (
+                    <div 
+                      key={guide.id}
+                      className={`sidebar-item ${activeModalGuide === guide.id ? 'active' : ''}`}
+                      onClick={() => setActiveModalGuide(guide.id)}
+                    >
+                      {guide.icon && <img src={guide.icon} alt="" />}
+                      <span>{guide.title}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="modal-content-area">
+                  {currentGuide.content.map((step, idx) => (
                     <div key={idx}>{step}</div>
                   ))}
                 </div>
               </div>
             </div>
-          ))}
-        </div>
+          );
+        })()}
       </div>
 
       <footer>

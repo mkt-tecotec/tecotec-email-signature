@@ -33,7 +33,6 @@ const AppleMailInstructions = () => {
                     style={{
                         width: '100%',
                         maxWidth: '433px',
-                        boxShadow: '0px 4px 4px rgba(0,0,0,0.3), 0px 8px 12px 6px rgba(0,0,0,0.15)',
                         marginTop: '11px',
                         marginBottom: '11px',
                         borderRadius: '6px'
@@ -63,7 +62,6 @@ const AppleMailInstructions = () => {
                     style={{
                         width: '100%',
                         maxWidth: '433px',
-                        boxShadow: '0px 4px 4px rgba(0,0,0,0.3), 0px 8px 12px 6px rgba(0,0,0,0.15)',
                         marginTop: '11px',
                         borderRadius: '6px'
                     }}
