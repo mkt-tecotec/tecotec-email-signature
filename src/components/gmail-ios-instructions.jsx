@@ -1,6 +1,6 @@
 import React from 'react';
 
-const imgStep1 = "./assets/gmail-ios-step1.png";
+const imgStep1 = "./images/guides/gmail__ios__1.jpg";
 
 const GmailIosInstructions = () => {
     const imgStyle = {

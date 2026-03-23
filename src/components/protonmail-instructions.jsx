@@ -1,7 +1,7 @@
 import React from 'react';
 
-const imgStep1 = "./assets/protonmail-step1.png";
-const imgStep2 = "./assets/protonmail-step2.png";
+const imgStep1 = "./images/guides/proton_mail_1.png";
+const imgStep2 = "./images/guides/proton_mail_2.png";
 
 const ProtonMailInstructions = () => {
     const imgStyle = {

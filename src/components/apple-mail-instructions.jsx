@@ -28,7 +28,7 @@ const AppleMailInstructions = () => {
                 </ol>
 
                 <img
-                    src="./assets/apple-mail-step1.png"
+                    src="./images/guides/apple_mail__macos__1.jpg"
                     alt="Instruction Step 1"
                     style={{
                         width: '100%',
@@ -57,7 +57,8 @@ const AppleMailInstructions = () => {
                 </div>
 
                 <img
-                    src="./assets/apple-mail-step2.png"
+                    src="./images/guides/apple_mail__macos__2.jpg"
+
                     alt="Instruction Step 2"
                     style={{
                         width: '100%',

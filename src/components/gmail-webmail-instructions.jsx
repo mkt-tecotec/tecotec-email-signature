@@ -1,6 +1,6 @@
 import React from 'react';
 
-const imgStep1 = "./assets/gmail-webmail-step1.png";
+const imgStep1 = "./images/guides/gmail__web_mail__1.jpg";
 
 const GmailWebmailInstructions = () => {
     const imgStyle = {

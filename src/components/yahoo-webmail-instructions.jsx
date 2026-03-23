@@ -1,8 +1,8 @@
 import React from 'react';
 
-const imgStep1 = "./assets/yahoo-webmail-step1.png";
-const imgStep2 = "./assets/yahoo-webmail-step2.png";
-const imgStep3 = "./assets/yahoo-webmail-step3.png";
+const imgStep1 = "./images/guides/yahoo__web_mail__1.jpg";
+const imgStep2 = "./images/guides/yahoo__web_mail__2.jpg";
+const imgStep3 = "./images/guides/yahoo__web_mail__3.jpg";
 
 const YahooWebmailInstructions = () => {
     const imgStyle = {

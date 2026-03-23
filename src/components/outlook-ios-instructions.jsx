@@ -1,10 +1,10 @@
 import React from 'react';
 
-const imgStep1 = "./assets/outlook-ios-step1.png";
-const imgStep2 = "./assets/outlook-ios-step2.png";
-const imgStep3 = "./assets/outlook-ios-step3.png";
-const imgStep4 = "./assets/outlook-ios-step4.png";
-const imgStep5 = "./assets/outlook-ios-step5.png";
+const imgStep1 = "./images/guides/microsoft_outlook__ios__1.jpg";
+const imgStep2 = "./images/guides/microsoft_outlook__ios__2.jpg";
+const imgStep3 = "./images/guides/microsoft_outlook__ios__3.jpg";
+const imgStep4 = "./images/guides/microsoft_outlook__ios__4.jpg";
+const imgStep5 = "./images/guides/microsoft_outlook__ios__5.jpg";
 
 const OutlookIosInstructions = () => {
     const imgStyle = {

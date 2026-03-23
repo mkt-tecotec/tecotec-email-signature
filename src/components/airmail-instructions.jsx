@@ -1,7 +1,7 @@
 import React from 'react';
 
-const imgStep1 = "./assets/airmail-step1.png";
-const imgStep2 = "./assets/airmail-step2.png";
+const imgStep1 = "./images/guides/airmail__macos__1.jpg";
+const imgStep2 = "./images/guides/airmail__macos__2.jpg";
 
 const AirmailInstructions = () => {
     const imgStyle = {

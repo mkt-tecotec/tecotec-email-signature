@@ -1,9 +1,9 @@
 import React from 'react';
 
-const imgStep1 = "./assets/win10-mail-step1.png";
-const imgStep2 = "./assets/win10-mail-step2.png";
-const imgStep3 = "./assets/win10-mail-step3.png";
-const imgStep4 = "./assets/win10-mail-step4.png";
+const imgStep1 = "./images/guides/mail_app__windows_10__1.jpg";
+const imgStep2 = "./images/guides/mail_app__windows_10__2.jpg";
+const imgStep3 = "./images/guides/mail_app__windows_10__1.jpg";
+const imgStep4 = "./images/guides/mail_app__windows_10__2.jpg";
 
 const Win10MailInstructions = () => {
     const imgStyle = {

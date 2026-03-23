@@ -1,9 +1,9 @@
 import React from 'react';
 
-const imgStep1 = "./assets/outlook-classic-step1.png";
-const imgStep2 = "./assets/outlook-classic-step2.png";
-const imgStep3 = "./assets/outlook-classic-step3.png";
-const imgStep4 = "./assets/outlook-classic-step4.png";
+const imgStep1 = "./images/guides/microsoft_outlook_classic__windows__1.jpg";
+const imgStep2 = "./images/guides/microsoft_outlook_classic__windows__2.jpg";
+const imgStep3 = "./images/guides/microsoft_outlook_classic__windows__3.jpg";
+const imgStep4 = "./images/guides/microsoft_outlook_classic__windows__4.jpg";
 
 const OutlookClassicInstructions = () => {
     const imgStyle = {

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const imgStep1 = "./assets/mailbird-step1.png";
-const imgStep2 = "./assets/mailbird-step2.png";
-const imgStep3 = "./assets/mailbird-step3.png";
-const imgStep4 = "./assets/mailbird-step4.png";
+const imgStep1 = "./images/guides/mailbird__windows__1.jpg";
+const imgStep2 = "./images/guides/mailbird__windows__2.jpg";
+const imgStep3 = "./images/guides/mailbird__windows__1.jpg";
+const imgStep4 = "./images/guides/mailbird__windows__2.jpg";
 
 const MailbirdInstructions = () => {
     const imgStyle = {

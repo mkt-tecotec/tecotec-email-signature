@@ -1,10 +1,10 @@
 import React from 'react';
 
-const imgStep1 = "./assets/emclient-step1.png";
-const imgStep2 = "./assets/emclient-step2.png";
-const imgStep3 = "./assets/emclient-step3.png";
-const imgStep4 = "./assets/emclient-step4.png";
-const imgStep5 = "./assets/emclient-step5.png";
+const imgStep1 = "./images/guides/em_client__windows__1.jpg";
+const imgStep2 = "./images/guides/em_client__windows__2.jpg";
+const imgStep3 = "./images/guides/em_client__windows__3.jpg";
+const imgStep4 = "./images/guides/em_client__windows__4.jpg";
+const imgStep5 = "./images/guides/em_client__windows__5.jpg";
 
 const EmClientInstructions = () => {
     const imgStyle = {

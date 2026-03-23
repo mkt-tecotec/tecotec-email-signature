@@ -1,7 +1,7 @@
 import React from 'react';
 
-const imgStep1 = "./assets/thunderbird-step1.png";
-const imgStep2 = "./assets/thunderbird-step2.png";
+const imgStep1 = "./images/guides/mozilla_thunderbird__windows__1.jpg";
+const imgStep2 = "./images/guides/mozilla_thunderbird__windows__1.jpg";
 
 const ThunderbirdInstructions = () => {
     const imgStyle = {
