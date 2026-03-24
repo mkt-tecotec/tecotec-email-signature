@@ -62,7 +62,6 @@ const AppleMailInstructions = () => {
         </div>
     );
 };
-    );
-};
+
 
 export default AppleMailInstructions;
