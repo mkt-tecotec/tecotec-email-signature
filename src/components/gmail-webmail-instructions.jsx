@@ -31,7 +31,7 @@ const GmailWebmailInstructions = () => {
             }}>
                 <ol style={{ ...listStyle, listStyleType: 'decimal' }} start={1}>
                     <li>Sau khi đăng nhập vào tài khoản Gmail của bạn, nhấp vào biểu tượng Settings ở góc trên cùng bên phải.</li>
-                    <li>Chọn tùy chọn thả xuống Settings.</li>
+                    <li>Chọn tùy chọn thả xuống See all settings.</li>
                     <li>Cuộn xuống phần Signature và nhấp vào "Tạo mới".</li>
                     <li>Nhập tên chữ ký mới của bạn vào modal và nhấp vào "Tạo".</li>
                     <li>Sao chép/dán chữ ký của bạn vào trình chỉnh sửa chữ ký.</li>
