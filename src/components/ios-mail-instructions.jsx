@@ -11,7 +11,6 @@ const IosMailInstructions = () => {
             fontFamily: '"Inter", sans-serif'
         }}>
             <ol style={{ fontSize: '14px', fontWeight: '500', lineHeight: '21px', color: '#000000', margin: 0, paddingLeft: '21px', listStyleType: 'decimal' }} start={1}>
-                <li>Gửi cho chính bạn URL chia sẻ và mở nó trên thiết bị iOS của bạn.</li>
                 <li>Truy cập ứng dụng Cài đặt trên thiết bị iOS của bạn. Cuộn xuống và chọn Mail (hoặc Cài đặt → Ứng dụng → Mail trên một số phiên bản). Sau đó cuộn xuống phần Composing và nhấp vào Signature.</li>
             </ol>
 
@@ -27,7 +26,7 @@ const IosMailInstructions = () => {
                 }}
             />
 
-            <ol style={{ fontSize: '14px', fontWeight: '500', lineHeight: '21px', color: '#000000', margin: 0, paddingLeft: '21px', listStyleType: 'decimal' }} start={3}>
+            <ol style={{ fontSize: '14px', fontWeight: '500', lineHeight: '21px', color: '#000000', margin: 0, paddingLeft: '21px', listStyleType: 'decimal' }} start={2}>
                 <li>Sao chép và dán chữ ký của bạn vào trình chỉnh sửa chữ ký (nhấn giữ trên trình chỉnh sửa để hiển thị tùy chọn dán).</li>
             </ol>
 
@@ -43,7 +42,7 @@ const IosMailInstructions = () => {
                 }}
             />
 
-            <ol style={{ fontSize: '14px', fontWeight: '500', lineHeight: '21px', color: '#000000', margin: 0, paddingLeft: '21px', listStyleType: 'decimal' }} start={4}>
+            <ol style={{ fontSize: '14px', fontWeight: '500', lineHeight: '21px', color: '#000000', margin: 0, paddingLeft: '21px', listStyleType: 'decimal' }} start={3}>
                 <li>Truy cập ứng dụng Mail, soạn email mới và tận hưởng chữ ký mới của bạn!</li>
             </ol>
 

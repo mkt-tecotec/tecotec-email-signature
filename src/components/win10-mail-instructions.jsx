@@ -45,25 +45,25 @@ const Win10MailInstructions = () => {
                     </p>
                 </div>
 
-                <img src={imgStep1} alt="Windows 10 Mail Warning" style={{ ...imgStyle, maxWidth: '450px' }} />
-
                 <ol style={{ ...listStyle, listStyleType: 'decimal' }} start={1}>
                     <li>Với Windows 10 Mail đang mở, nhấp vào biểu tượng Cài đặt (Settings cog) ở dưới cùng của thanh bên trái để mở ngăn cài đặt.</li>
                 </ol>
 
-                <img src={imgStep2} alt="Windows 10 Settings" style={imgStyle} />
+                <img src={imgStep1} alt="Windows 10 Mail Settings" style={imgStyle} />
 
                 <ol style={{ ...listStyle, listStyleType: 'decimal' }} start={2}>
                     <li>Nhấp vào tùy chọn Chữ ký (Signature) trong ngăn cài đặt để mở hộp thoại chữ ký.</li>
                     <li>Sao chép và dán chữ ký của bạn vào trình chỉnh sửa chữ ký.</li>
                 </ol>
 
-                <img src={imgStep3} alt="Windows 10 Signature Settings" style={imgStyle} />
+                <img src={imgStep2} alt="Windows 10 Settings" style={imgStyle} />
 
                 <ol style={{ ...listStyle, listStyleType: 'decimal' }} start={4}>
                     <li>Nhấp vào Save (Lưu) để đóng hộp thoại chữ ký.</li>
                     <li>Soạn một email mới và tận hưởng chữ ký mới của bạn!</li>
                 </ol>
+
+                <img src={imgStep3} alt="Windows 10 Signature Settings" style={imgStyle} />
 
                 <img src={imgStep4} alt="Windows 10 Compose" style={imgStyle} />
             </div>

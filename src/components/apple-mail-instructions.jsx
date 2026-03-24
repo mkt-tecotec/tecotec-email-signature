@@ -1,16 +1,27 @@
 import React from 'react';
 
 const AppleMailInstructions = () => {
-    return (
-        <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '11px',
-            width: '100%',
-            maxWidth: '1160px',
-            fontFamily: '"Inter", sans-serif'
-        }}>
+    const imgStyle = {
+        width: '100%',
+        maxWidth: '433px',
+        marginTop: '11px',
+        marginBottom: '11px',
+        borderRadius: '6px',
+        boxShadow: '0px 4px 4px rgba(0,0,0,0.3), 0px 8px 12px 6px rgba(0,0,0,0.15)',
+    };
 
+    const listStyle = {
+        fontSize: '14px',
+        fontWeight: '500',
+        lineHeight: '21px',
+        color: '#000000',
+        fontFamily: '"Inter", sans-serif',
+        margin: 0,
+        paddingLeft: '21px',
+    };
+
+    return (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '11px', width: '100%', maxWidth: '1160px', fontFamily: '"Inter", sans-serif' }}>
             {/* Content Section */}
             <div style={{
                 display: 'flex',
@@ -20,26 +31,16 @@ const AppleMailInstructions = () => {
                 maxWidth: '954px',
                 marginTop: '11px',
             }}>
-                <ol style={{ fontSize: '14px', fontWeight: '500', lineHeight: '21px', color: '#000000', margin: 0, paddingLeft: '21px', listStyleType: 'decimal' }} start={1}>
+                <ol style={{ ...listStyle, listStyleType: 'decimal' }} start={1}>
                     <li>Với ứng dụng Mail đang mở, nhấp vào Mail và sau đó Preferences ở góc trên cùng bên trái của màn hình của bạn.</li>
                     <li>Từ cửa sổ pop-up Preferences, nhấp vào tab Signatures.</li>
                     <li>Nhấp vào nút + ở dưới cùng của cột ở giữa.</li>
                     <li>Sao chép và dán chữ ký email mới của bạn vào cột bên phải và đóng cửa sổ pop-up để lưu.</li>
                 </ol>
 
-                <img
-                    src="./images/guides/apple_mail__macos__1.jpg"
-                    alt="Instruction Step 1"
-                    style={{
-                        width: '100%',
-                        maxWidth: '433px',
-                        marginTop: '11px',
-                        marginBottom: '11px',
-                        borderRadius: '6px'
-                    }}
-                />
+                <img src="./images/guides/apple_mail__macos__1.jpg" alt="Apple Mail Settings" style={imgStyle} />
 
-                <ol style={{ fontSize: '14px', fontWeight: '500', lineHeight: '21px', color: '#000000', margin: 0, paddingLeft: '21px', listStyleType: 'decimal' }} start={5}>
+                <ol style={{ ...listStyle, listStyleType: 'decimal' }} start={5}>
                     <li>Chọn chữ ký mới của bạn trong trường "Choose Signature" gần cuối cửa sổ pop-up.</li>
                     <li>Đóng cửa sổ pop-up Preferences, soạn email mới và tận hưởng chữ ký mới của bạn!</li>
                 </ol>
@@ -56,19 +57,11 @@ const AppleMailInstructions = () => {
                     </p>
                 </div>
 
-                <img
-                    src="./images/guides/apple_mail__macos__2.jpg"
-
-                    alt="Instruction Step 2"
-                    style={{
-                        width: '100%',
-                        maxWidth: '433px',
-                        marginTop: '11px',
-                        borderRadius: '6px'
-                    }}
-                />
+                <img src="./images/guides/apple_mail__macos__2.jpg" alt="Apple Mail Compose" style={{ ...imgStyle, marginBottom: 0 }} />
             </div>
         </div>
+    );
+};
     );
 };
 

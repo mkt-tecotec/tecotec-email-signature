@@ -34,17 +34,22 @@ const ThunderbirdInstructions = () => {
                 maxWidth: '954px',
                 marginTop: '11px'
             }}>
-                <div style={{ fontSize: '14px', fontWeight: '500', lineHeight: '21px', color: '#000000' }}>
-                    Tải chữ ký của bạn dưới dạng file HTML.<br/>
-                    Với ứng dụng Mozilla Thunderbird đang mở, nhấp vào biểu tượng Menu ở góc trên cùng bên phải, sau đó dưới Options chọn Account Settings.<br/>
-                    Từ cửa sổ pop-up Account Settings, nhấp chọn hộp kiểm Attach the signature from a file instead (text, HTML, or image) và chọn chữ ký HTML bạn vừa tải xuống cho ô nhập tệp tin bên dưới.
-                </div>
+                <ol style={{ ...listStyle, listStyleType: 'decimal' }} start={1}>
+                    <li>Tải chữ ký của bạn dưới dạng file HTML.</li>
+                    <li>Với ứng dụng Mozilla Thunderbird đang mở, nhấp vào biểu tượng Menu ở góc trên cùng bên phải, sau đó dưới Options chọn Account Settings.</li>
+                    <li>Từ cửa sổ pop-up Account Settings, nhấp chọn hộp kiểm Attach the signature from a file instead (text, HTML, or image) và chọn chữ ký HTML bạn vừa tải xuống cho ô nhập tệp tin bên dưới.</li>
+                </ol>
 
                 <img src={imgStep1} alt="Thunderbird Account Settings" style={imgStyle} />
 
+                <ol style={{ ...listStyle, listStyleType: 'decimal' }} start={4}>
+                    <li>Nhấp OK ở dưới cùng bên phải của cửa sổ popup, soạn một email mới và tận hưởng chữ ký mới của bạn!</li>
+                </ol>
+
                 <div style={{ fontSize: '14px', fontWeight: '500', lineHeight: '21px', color: '#000000' }}>
-                    Nhấp OK ở dưới cùng bên phải của cửa sổ popup, soạn một email mới và tận hưởng chữ ký mới của bạn!<br/>
-                    <strong>Quan trọng:</strong> Thunderbird sẽ hiển thị viền đỏ xung quanh các phần tử trong chữ ký email của bạn. Đừng lo lắng – chúng sẽ không hiển thị với người nhận khi bạn gửi email cho họ.
+                    <p style={{ margin: 0 }}>
+                        <strong>Quan trọng:</strong> Thunderbird sẽ hiển thị viền đỏ xung quanh các phần tử trong chữ ký email của bạn. Đừng lo lắng – chúng sẽ không hiển thị với người nhận khi bạn gửi email cho họ.
+                    </p>
                 </div>
 
                 <img src={imgStep2} alt="Thunderbird Compose" style={imgStyle} />

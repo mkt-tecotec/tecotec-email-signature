@@ -25,17 +25,6 @@ const MailbirdInstructions = () => {
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '11px', width: '100%', maxWidth: '1160px', fontFamily: '"Inter", sans-serif' }}>
-            {/* Heading */}
-            <h2 style={{
-                fontSize: '20px',
-                fontWeight: '600',
-                color: '#333333',
-                margin: 0,
-                lineHeight: '30px',
-            }}>
-                Hướng dẫn cài đặt
-            </h2>
-
 
             {/* Content Section */}
             <div style={{
