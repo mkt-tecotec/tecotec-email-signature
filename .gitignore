@@ -7,3 +7,8 @@ dist-ssr
 .DS_Store
 .stitch/
 resources/
+figma-ui-mcp/
+.agent/
+.agents/
+.claude/
+.vscode/
