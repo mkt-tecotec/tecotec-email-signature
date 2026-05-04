@@ -10,5 +10,11 @@
     "name": "TECOTEC - OES",
     "htmlPath": "/templates/oes.html",
     "brandFolder": "/logos/oes"
+  },
+  {
+    "id": "ecom-trimos",
+    "name": "TECOTEC - ECOM-TRIMOS",
+    "htmlPath": "/templates/ecom-trimos.html",
+    "brandFolder": "/logos/ecom-trimos"
   }
 ]

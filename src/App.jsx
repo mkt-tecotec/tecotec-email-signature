@@ -37,7 +37,7 @@ export default function App() {
 
   // Fetch templates.json on mount
   useEffect(() => {
-    fetch('/tecotec-email-signature/templates.json')
+    fetch('/tecotec-email-signature/templates.json?t=' + Date.now())
       .then(res => res.json())
       .then(data => {
         setTemplates(data);
@@ -47,7 +47,7 @@ export default function App() {
       })
       .catch(err => {
         // Fallback for local dev without base path
-        fetch('/templates.json')
+        fetch('/templates.json?t=' + Date.now())
           .then(res => res.json())
           .then(data => {
             setTemplates(data);
@@ -65,12 +65,12 @@ export default function App() {
     const template = templates.find(t => t.id === selectedTemplateId);
     if (template) {
       // Try with /tecotec-email-signature/ first (GitHub Pages base)
-      fetch(`/tecotec-email-signature${template.htmlPath}`)
+      fetch(`/tecotec-email-signature${template.htmlPath}?t=` + Date.now())
         .then(res => res.text())
         .then(html => setTemplateHtml(html))
         .catch(() => {
           // Fallback dev local
-          fetch(template.htmlPath)
+          fetch(`${template.htmlPath}?t=` + Date.now())
             .then(res => res.text())
             .then(html => setTemplateHtml(html));
         });
@@ -104,7 +104,7 @@ export default function App() {
   const copyToClipboard = () => {
     if (previewRef.current) {
       const range = document.createRange();
-      range.selectNode(previewRef.current);
+      range.selectNodeContents(previewRef.current);
       const selection = window.getSelection();
       selection.removeAllRanges();
       selection.addRange(range);
