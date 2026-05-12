@@ -96,7 +96,9 @@ export default function App() {
     html = html.replace(/{{website}}/g, formData.website || '');
     html = html.replace(/{{address}}/g, formData.address || '');
     
-    // Convert relative logo paths to absolute if needed, or leave them if they are hosted like https://marcom...
+    // Convert relative image paths to absolute URLs
+    const baseUrl = 'https://mkt-tecotec.github.io/tecotec-email-signature';
+    html = html.replace(/src="\.\//g, `src="${baseUrl}/`);
     
     return html;
   };
