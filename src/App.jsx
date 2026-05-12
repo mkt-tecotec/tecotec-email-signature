@@ -322,25 +322,29 @@ export default function App() {
           </div>
 
           <div className="form-group">
-            <label>Số điện thoại</label>
+            <label>Số điện thoại {selectedTemplateId === 'ecom-trimos' && '(Cố định)'}</label>
             <input 
               type="tel" 
               className="form-control" 
               name="phone" 
-              value={formData.phone} 
+              value={selectedTemplateId === 'ecom-trimos' ? '+84 966 580 080' : formData.phone} 
               onChange={handleInputChange} 
+              disabled={selectedTemplateId === 'ecom-trimos'}
+              placeholder={selectedTemplateId === 'ecom-trimos' ? "Thông tin cố định cho mẫu này" : ""}
             />
           </div>
 
           <div className="form-group">
-            <label>Email *</label>
+            <label>Email * {selectedTemplateId === 'ecom-trimos' && '(Cố định)'}</label>
             <input 
               type="email" 
               className="form-control" 
               name="email" 
-              value={formData.email} 
+              value={selectedTemplateId === 'ecom-trimos' ? 'info@tecostore.vn' : formData.email} 
               onChange={handleInputChange} 
-              required
+              required={selectedTemplateId !== 'ecom-trimos'}
+              disabled={selectedTemplateId === 'ecom-trimos'}
+              placeholder={selectedTemplateId === 'ecom-trimos' ? "Thông tin cố định cho mẫu này" : ""}
             />
           </div>
 
