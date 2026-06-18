@@ -16,5 +16,11 @@
     "name": "TECOTEC - ECOM-TRIMOS",
     "htmlPath": "/templates/ecom-trimos.html",
     "brandFolder": "/logos/ecom-trimos"
+  },
+  {
+    "id": "tecotec-a30",
+    "name": "TECOTEC Group (A30 Banner)",
+    "htmlPath": "/templates/tecotec-a30.html",
+    "brandFolder": "/logos/tecotec"
   }
 ]
