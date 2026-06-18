@@ -97,7 +97,7 @@ export default function App() {
     html = html.replace(/{{address}}/g, formData.address || '');
     
     // Convert relative image paths to absolute URLs
-    const baseUrl = import.meta.env.DEV ? 'http://localhost:5173/tecotec-email-signature' : 'https://mkt-tecotec.github.io/tecotec-email-signature';
+    const baseUrl = import.meta.env.DEV ? 'http://localhost:5173' : window.location.origin + window.location.pathname.replace(/\/$/, '');
     html = html.replace(/src="\.\//g, `src="${baseUrl}/`);
     
     return html;
